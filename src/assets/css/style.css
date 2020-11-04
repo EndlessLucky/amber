@@ -1,0 +1,28 @@
+/* Navbar */
+.logo-img{
+    width: auto;
+    height: 30px;
+}
+.nav-bar{
+    position: fixed;
+    width: 100%;
+    background-color: transparent!important;
+    z-index: 1;
+}
+.nav-link{
+    color: white!important;
+}
+
+/* Landing section */
+.masthead {
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 35rem;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000000 100%), url("../img/home-page-image.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    height: 100vh;
+}
