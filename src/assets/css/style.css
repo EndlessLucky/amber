@@ -1,7 +1,7 @@
 /*Whole site*/
 body{
     font-family: 'Montserrat'!important;
-    height: 5000px;
+    /* height: 5000px; */
 }
 
 /* Navbar */
@@ -40,7 +40,7 @@ body{
     height: 25px;
 }
 .nav-bar{
-    position: fixed;
+    position: fixed!important;
     width: 100%;
     padding-top: 20px;
     background-color: transparent!important;
@@ -358,4 +358,132 @@ body{
 }
 .project-content-container{
     width: 70%;
+}
+
+/* Contact section */
+@media only screen and (max-width: 765px) {
+    .contact-title{
+        width: 100%;
+    }
+    .rwap-1::after {
+        right: 19%!important;
+    }
+}
+@media only screen and (min-width: 765px) {
+    .contact-title{
+        width: 80%;
+    }
+    .rwap-1::after {
+        right: 35.5%;
+    }
+}
+.contact-btn{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.contact-row{
+    justify-content: center;
+}
+.contact-row-one{
+    margin-top: 60px;
+    margin-bottom: 30px;
+    justify-content: center;
+}
+.contact-title{
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 1.5;
+}
+.slantButton{
+    position: relative;
+    background-color: #FD6B00;
+    color: #fff!important;
+    padding: 7px 35px 10px 35px;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    outline: 0;
+    text-transform: capitalize;
+    text-decoration: none!important;
+    width: 182px;
+    height: 36px;
+}
+.slantButton:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -1px;
+    width: 0;
+    height: 0;
+    border-bottom: 48px solid #fff;
+    border-left: 11px solid transparent;
+}
+.slantButton:after {
+    content: '';
+    position: absolute;
+    top: -8px;
+    right: -17px;
+    border-left: 3px solid #fd6b00;
+    width: 10px;
+    height: 12px;
+    transform: rotate(12deg);
+}
+.slantButton:hover {
+    transition: all 0.5S;
+    background-color: #f38f47;
+}
+.slantButton:hover::after {
+    height: 40px;
+    transition: all 0.5S;
+}
+.rwap-1 {
+    display: inline;
+}
+.rwap-1::after {
+    content: '';
+    position: absolute;
+    top: -14px;
+    width: 44px;
+    height: 24px;
+    border-top: 3px solid #fd6b00;
+}
+.rwap-1:hover::after {
+    width: 54px;
+    transition: all 0.5S;
+}
+.contact-line {
+    width: 43px;
+    height: 47px;
+    border-bottom: 3.2px solid #00adf0;
+    transform: translateY(-20px) translateX(5px) rotate(0deg);
+    position: absolute;
+    top: -38px;
+    left: 10px;
+}
+
+/* Footer section */
+@media only screen and (max-width: 765px) {
+    .footer-btns{
+        margin-top: 0px;
+    }
+    .footer-content-col{
+        margin-top:50px;
+    }
+}
+@media only screen and (min-width: 765px) {
+    .footer-btns{
+        margin-top: -45px;
+    }
+    .footer-content-col{
+        margin-top:0px;
+    }
+} 
+.footer-background{
+    background-color: #131b27;
+}
+.footer-content{
+    color: white;
+    font-size: 14px;
+    line-height: 3;
 }
