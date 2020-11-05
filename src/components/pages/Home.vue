@@ -3,8 +3,9 @@
     <Header/>
     <Landing/>
     <About/>
-    <Project/>
+    <DNA/>
     <Piratas/>
+    <Project/>
   </div>
 </template>
 
@@ -12,8 +13,9 @@
 import Header from '../layouts/Header'
 import Landing from '../home/Landing'
 import About from '../home/About'
-import Project from '../home/Project'
+import DNA from '../home/DNA'
 import Piratas from '../home/Piratas'
+import Project from '../home/Project'
 
 export default {
   name: 'Home',
@@ -21,8 +23,9 @@ export default {
     Header,
     Landing,
     About,
-    Project,
-    Piratas
+    DNA,
+    Piratas,
+    Project
   }
 }
 </script>

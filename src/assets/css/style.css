@@ -226,7 +226,7 @@ body{
     left: 54px;
 }
 
-/* Project section */
+/* DNA section */
 @media only screen and (max-width: 765px) {
     .about-title{
         font-size: 42px;
@@ -238,24 +238,24 @@ body{
         flex-direction: column-reverse;
     }
 }
-.project-title{
+.DNA-title{
     text-align: center;
     font-size: 12px;
     font-style: italic;
     font-weight: bold;
     color:#fd6b00;
 }
-.project-title-one{
+.DNA-title-one{
     font-size: 42px;
     font-weight: bold;
 }
-.project-title-two{
+.DNA-title-two{
     font-size: 42px;
     font-style: italic;
     font-weight: bold;
     color:#fd6b00;
 }
-.project-card{
+.DNA-card{
     padding-top: 50px;
 }
 
@@ -301,4 +301,61 @@ body{
 }
 .piratas-content-row{
     margin-top: 50px;
+}
+
+/* Project section */
+.project-background{
+    position: relative;
+    width: 100%;
+    height: 760px;
+    min-height: 35rem;
+    background: linear-gradient(180deg,rgba(0,0,0,.2) 0,rgba(0,0,0,.7) 100%,#000),url(../img/4-1.png);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+.project-title-one{
+    font-size: 42px;
+    font-weight: bold;
+    color: white;
+}
+.project-title-two{
+    margin-top: 30px;
+    font-size: 42px;
+    font-weight: bold;
+    color: white;
+}
+.project-title-three{
+    margin-top: 40px;
+    font-size: 42px;
+    font-weight: bold;
+    color: white;
+}
+.project-content{
+    font-size: 14px;
+    line-height: 2.5;
+    color: white;
+}
+.project-num{
+    margin-top: 10px;
+    padding-left: 40px;
+    font-size: 14px;
+    color: #fd6b00;
+}
+.project-line{
+    width: 60px;
+    height: 293px;
+    border-bottom: 1px solid #FD6B21;
+    -webkit-transform: translateY(34px) translateX(5px) rotate(-70deg);
+    transform: translateY(34px) translateX(5px) rotate(-80deg);
+    position: absolute;
+    top: -55px;
+    left: -110px;
+}
+.project-num-container{
+    width: 30%;
+}
+.project-content-container{
+    width: 70%;
 }

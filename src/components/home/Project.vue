@@ -1,57 +1,36 @@
 <template>
-  <div class="about-container">
-    <div class="col-md-12">
-      <p class="project-title">NUESTRO ADN</p>
-    </div>
-    <div class="row">
-      <div class="col-md-6 project-card">
-        <h1 class="project-title-one">Cloud</h1>
-        <h1 class="project-title-two">Adoption</h1>
-        <p class="about-content">
-          Ayudamos a cambiar tus modos operativos y adaptarte a los nuevos entornos de trabajo Cloud.
-        </p>
+  <div class="project-background">
+    <div class="about-container">
+      <div class="col-md-12">
+        <p class="DNA-title">PROYECTOS</p>
       </div>
-      <div class="col-md-6">
-        <img src="../../assets/img/home-2.png"/>
-      </div>
-    </div>
-    <div class="row mobile-reverse">
-      <div class="col-md-6">
-        <img src="../../assets/img/home-3.png"/>
-      </div>
-      <div class="col-md-6 project-card">
-        <h1 class="project-title-one">Data</h1>
-        <h1 class="project-title-two">Insights</h1>
-        <p class="about-content">
-          Conocemos de cerca el poder de los datos, organice sus datos de manera eficiente.
-        </p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-6 project-card">
-        <h1 class="project-title-one">Application</h1>
-        <h1 class="project-title-two">Modernization</h1>
-        <p class="about-content">
-          Modernice sus aplicaciones haciéndolas más ágiles, basadas en datos, inteligentes y orientadas a la nube.
-        </p>
-      </div>
-      <div class="col-md-6">
-        <img src="../../assets/img/home-2.png"/>
+      <div class="row">
+        <div class="col-md-6 DNA-card">
+          <h1 class="project-title-one">Latin Surf</h1>
+          <div class="row">
+            <div class="project-num-container">
+              <p class="project-num">01</p>
+              <span class="project-line"></span>
+            </div>
+            <div class="project-content-container">
+              <p class="project-content">
+                Body - Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                sed diam nonumy eirmod tempor invidunt ut
+                labore et consertur lorem.
+              </p>
+            </div>
+          </div>
+          <h1 class="project-title-two">Lennon</h1>
+          <h1 class="project-title-three">Superliga<br> CMD</h1>
+        </div>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import { isMobile } from 'mobile-device-detect'
-
 export default {
-  name: 'Project',
-  data () {
-    return {
-      isMobile: isMobile
-    }
-  }
+  name: 'Project'
 }
 </script>
 
