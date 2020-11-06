@@ -1,0 +1,149 @@
+/* Landing section */
+@media only screen and (min-width: 765px) {
+  .solution-landing-title-container{
+    padding-left: 10%;
+    padding-top: 15%;
+    padding-right: 52%;
+  }
+  .solution-landing-content-container{
+    padding-top: 2%;
+    padding-left: 16%;
+    padding-right: 60%;
+  }
+  .solution-landing-bottom{
+    margin-top: 9%;
+    margin-left: 27%;
+    margin-right: 27%;
+  }
+}
+@media only screen and (max-width: 765px) {
+  .solution-landing-title-container{
+    padding-top: 40%;
+    padding-left: 10%;
+    padding-right: 10%;
+  }  
+  .solution-landing-content-container{
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .solution-landing-bottom{
+    margin-top: 85%;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+.solution-masthead{
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 35rem;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%, #000000 100%), url("../img/man-back.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  height: 100vh;
+}
+
+/* About section */
+@media only screen and (min-width: 765px) {
+  .solution-about-title{
+    padding-right: 50%;
+  }  
+}
+@media only screen and (max-width: 765px) {
+  .solution-about-title{
+    padding-right: 35%;
+  }
+}
+.solution-about-title{
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 1.7;
+  color: #fd6b00;
+}
+
+/* DNA section */
+@media only screen and (min-width: 765px) {
+  .DNA-img{
+    width: 160px;
+    height: 160px;
+  }
+  .DNA-text{
+    font-size: 28px;
+    text-align: center;
+  } 
+  .col-DNA{
+    padding-left: 9.5%;
+    padding-right: 9.5%;
+  }
+}
+@media only screen and (max-width: 765px) {
+  .DNA-img{
+    width: 136px;
+    height: 136px;
+  }
+  .DNA-text{
+    font-size: 26px;
+  }
+  .col-DNA{
+    margin-bottom: 35px;
+    display: flex;
+    flex-direction: row-reverse;    
+  }
+}
+
+.DNA-container{
+  padding: 0px 10% 30px 10%;
+}
+
+.DNA-text{
+  margin-top:25px;  
+  color: #131b27;
+  font-weight: bold;  
+}
+
+/* Advertise section */
+@media only screen and (min-width: 765px) {
+  .advertise-col{
+    padding-top: 30px;
+    padding-right: 170px;
+  }
+  .advertise-row{
+    margin-top: 50px;
+  }
+}
+@media only screen and (max-width: 765px) {
+  .advertise-col{
+    padding-left: 30%;
+  }
+  .solution-advertise-img-one{
+    object-fit: cover;
+    object-position: 20%;
+    height: 348px!important;
+  }
+}
+.solution-advertise-title{
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 1.7;
+  color: #fd6b00;
+}
+.solution-advertise-img{
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+.solution-advertise-bg{
+  position: relative;
+  width: 100%;
+  height: 1020px;
+  background-color: #fd6b00;
+}
+.solution-advertise-img-one{
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding-left: 9%;
+  padding-right: 9%;
+}

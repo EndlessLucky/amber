@@ -11,5 +11,6 @@ export default {
 </script>
 
 <style>
-  @import 'assets/css/style.css'
+  @import 'assets/css/home-style.css';
+  @import 'assets/css/solution-style.css';
 </style>

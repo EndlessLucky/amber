@@ -36,7 +36,7 @@
         </p>
       </div>
       <div class="col-md-6">
-        <img src="../../assets/img/home-2.png"/>
+        <img src="../../assets/img/home-1.png"/>
       </div>
     </div>
   </div>

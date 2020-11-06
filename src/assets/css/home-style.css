@@ -39,6 +39,10 @@ body{
     width: auto;
     height: 25px;
 }
+.logo-img-black{
+    width: auto;
+    height: 18px;
+}
 .nav-bar{
     position: fixed!important;
     width: 100%;
@@ -50,6 +54,10 @@ body{
 .nav-link{
     color: white!important;
     margin-right: 20px;
+}
+.nav-link a{
+    color: white!important;
+    text-decoration: none!important;
 }
 #nav-footer{
     text-align: left;
@@ -73,6 +81,7 @@ body{
     }
     .landing-content{
         font-size: 14px;
+        line-height: 2.5;
     }
     .line1 {
         width: 474px;
@@ -168,7 +177,7 @@ body{
         font-size: 62px;
     }
     .about-container{
-        padding:77px 296px 30px 296px;
+        padding:77px 21% 30px 21%;
     }
 }
 @media only screen and (max-width: 765px) {

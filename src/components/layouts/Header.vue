@@ -1,14 +1,19 @@
 <template>
   <b-navbar class="nav-bar" toggleable="lg" type="dark" variant="info" v-bind:style="{ backgroundColor: collapseColor }">
-    <b-navbar-brand href="#">
-      <img class="logo-img" src="../../assets/img/Logo-4.png">
+    <b-navbar-brand href="">
+      <router-link v-bind:to="{ name: 'Home' }">
+        <img class="logo-img" src="../../assets/img/Logo-4.png" v-if="!isblackLogo">
+        <img class="logo-img-black" src="../../assets/img/Logo[1].png" v-else>
+      </router-link>
     </b-navbar-brand>
 
     <b-navbar-toggle target="nav-collapse" v-on:click="collapseNav"></b-navbar-toggle>
 
     <b-collapse id="nav-collapse" is-nav>
       <b-navbar-nav id="nav-item" class="ml-auto">
-        <b-nav-item href="#">Soluciones</b-nav-item>
+        <b-nav-item href="">
+          <router-link v-bind:to="{ name: 'Solution' }">Soluciones</router-link>
+        </b-nav-item>
         <b-nav-item href="#">Piratas</b-nav-item>
         <b-nav-item href="#">Talento</b-nav-item>
         <b-nav-item href="#">Proyectos</b-nav-item>
@@ -42,7 +47,9 @@ export default {
   data () {
     return {
       collapseColor: 'transparent!important',
-      collapse: false
+      collapse: false,
+      isblackLogo: false,
+      blackLogo: '../../assets/img/Logo-4.png'
     }
   },
   methods: {
@@ -53,6 +60,14 @@ export default {
       } else {
         this.collapseColor = 'transparent!important'
       }
+    }
+  },
+  mounted () {
+    console.log(this.$route)
+    if (this.$route.name === 'Home' || this.$route.name === 'Project') {
+      this.isblackLogo = false
+    } else {
+      this.isblackLogo = true
     }
   }
 }
