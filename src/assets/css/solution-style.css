@@ -112,6 +112,13 @@
   .advertise-row{
     margin-top: 50px;
   }
+  .partner-col{
+    padding-top:2%;
+    padding-right: 14%;
+  }
+  .partner-row{
+    margin-top: 15%;
+  }
 }
 @media only screen and (max-width: 765px) {
   .advertise-col{
@@ -146,4 +153,24 @@
   height: auto;
   padding-left: 9%;
   padding-right: 9%;
+}
+
+/* Navigation section */
+@media only screen and (max-width: 765px) {
+  .navigator-col{
+    width: 50%;
+  }
+  .navigator-margin{
+    margin-top: 10%;
+  }
+}
+.solution-navigation-title{
+  padding-right: 50%;
+  line-height: 1.5;
+  font-size: 28px;
+  font-weight: bold;
+  color: #131b27;
+}
+.navigator-row{
+  margin-top: 13%;
 }

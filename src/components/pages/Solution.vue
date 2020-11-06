@@ -5,6 +5,9 @@
     <About/>
     <DNA/>
     <Advertise/>
+    <Navigation/>
+    <Contact :title="contactTitle"/>
+    <Footer/>
   </div>
 </template>
 
@@ -14,6 +17,9 @@ import Landing from '../solution/Landing'
 import About from '../solution/About'
 import DNA from '../solution/DNA'
 import Advertise from '../solution/Advertise'
+import Navigation from '../solution/Navigation'
+import Contact from '../home/Contact'
+import Footer from '../layouts/Footer'
 
 export default {
   name: 'Solution',
@@ -22,7 +28,15 @@ export default {
     Landing,
     About,
     DNA,
-    Advertise
+    Advertise,
+    Navigation,
+    Contact,
+    Footer
+  },
+  data () {
+    return {
+      contactTitle: 'Cuéntanos el reto y lo resolvemos'
+    }
   }
 }
 </script>

@@ -6,7 +6,7 @@
     <DNA/>
     <Piratas/>
     <Project/>
-    <Contact/>
+    <Contact :title="contactTitle"/>
     <Footer/>
   </div>
 </template>
@@ -32,6 +32,11 @@ export default {
     Project,
     Contact,
     Footer
+  },
+  data () {
+    return {
+      contactTitle: 'Dondequiera que se encuentre en su viaje a la nube, podemos ayudarlo a desarrollar una estrategia para su transformación'
+    }
   }
 }
 </script>

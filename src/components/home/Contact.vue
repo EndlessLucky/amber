@@ -2,9 +2,7 @@
   <div class="about-container">
     <div class="row contact-row">
       <h1 class="contact-title">
-        Dondequiera que se encuentre en su viaje a la
-        nube, podemos ayudarlo a desarrollar una
-        estrategia para su transformación
+        {{ title }}
       </h1>
       <div class="col-md-12 d-flex justify-content-center contact-btn">
         <!-- <div class="contact-line"></div> -->
@@ -20,7 +18,8 @@
 
 <script>
 export default {
-  name: 'Contact'
+  name: 'Contact',
+  props: ['title']
 }
 </script>
 

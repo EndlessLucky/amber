@@ -32,6 +32,19 @@
       </div>
       <img class="solution-advertise-img-one" src="../../assets/img/discussing.png"/>
     </div>
+    <div class="about-container">
+        <div class="row partner-row">
+          <div class="col-md-6">
+            <h1 class="DNA-title-one">Partners</h1>
+          </div>
+          <div class="col-md-6 partner-col">
+            <p class="about-content">
+              Tomamos a cada cliente que viene hacia nosotros como un pirata más de nuestra embarcación.
+              Ponemos a disposición todo nuestro armamento tecnológico para conquistar nuevos negocios.
+            </p>
+          </div>
+        </div>
+      </div>
   </div>
 </template>
 
