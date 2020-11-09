@@ -6,7 +6,7 @@
     <DNA/>
     <Advertise/>
     <Navigation/>
-    <Contact :title="contactTitle"/>
+    <Contact/>
     <Footer/>
   </div>
 </template>
@@ -18,7 +18,7 @@ import About from '../solution/About'
 import DNA from '../solution/DNA'
 import Advertise from '../solution/Advertise'
 import Navigation from '../solution/Navigation'
-import Contact from '../home/Contact'
+import Contact from '../solution/Contact'
 import Footer from '../layouts/Footer'
 
 export default {
