@@ -12,12 +12,12 @@
         </p>
       </div>
       <div class="col-md-6">
-        <img src="../../assets/img/home-2.png"/>
+        <img src="../../assets/img/cloud_adoption.svg"/>
       </div>
     </div>
     <div class="row mobile-reverse">
       <div class="col-md-6">
-        <img src="../../assets/img/home-3.png"/>
+        <img src="../../assets/img/data_insights.svg"/>
       </div>
       <div class="col-md-6 DNA-card">
         <h1 class="DNA-title-one">Data</h1>
@@ -36,7 +36,7 @@
         </p>
       </div>
       <div class="col-md-6">
-        <img src="../../assets/img/home-1.png"/>
+        <img src="../../assets/img/app_modernization.svg"/>
       </div>
     </div>
   </div>

@@ -3,15 +3,15 @@
   .solution-landing-title-container{
     padding-left: 10%;
     padding-top: 15%;
-    padding-right: 52%;
+    padding-right: 65%;
   }
   .solution-landing-content-container{
     padding-top: 2%;
     padding-left: 16%;
-    padding-right: 60%;
+    padding-right: 65%;
   }
   .solution-landing-bottom{
-    margin-top: 9%;
+    margin-top: 20%;
     margin-left: 27%;
     margin-right: 27%;
   }
@@ -37,7 +37,7 @@
   width: 100%;
   height: auto;
   min-height: 35rem;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%, #000000 100%), url("../img/man-back.png");
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%, #000000 100%), url("../img/solution-bg.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -107,7 +107,7 @@
 @media only screen and (min-width: 765px) {
   .advertise-col{
     padding-top: 30px;
-    padding-right: 170px;
+    /* padding-right: 170px; */
   }
   .advertise-row{
     margin-top: 50px;
@@ -117,7 +117,7 @@
     padding-right: 14%;
   }
   .partner-row{
-    margin-top: 15%;
+    margin-top: 20%;
   }
 }
 @media only screen and (max-width: 765px) {

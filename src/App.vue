@@ -13,4 +13,5 @@ export default {
 <style>
   @import 'assets/css/home-style.css';
   @import 'assets/css/solution-style.css';
+  @import 'assets/css/piratas-style.css';
 </style>

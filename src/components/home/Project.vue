@@ -6,11 +6,11 @@
       </div>
       <div class="row">
         <div class="col-md-6 DNA-card">
-          <h1 class="project-title-one">Latin Surf</h1>
-          <div class="row">
+          <h1 class="project-title-one" v-on:click="selectOne">Latin Surf</h1>
+          <div class="row" v-if="isSelect == 1">
             <div class="project-num-container">
               <p class="project-num">01</p>
-              <span class="project-line"></span>
+              <span class="project-line-one"></span>
             </div>
             <div class="project-content-container">
               <p class="project-content">
@@ -20,8 +20,34 @@
               </p>
             </div>
           </div>
-          <h1 class="project-title-two">Lennon</h1>
-          <h1 class="project-title-three">Superliga<br> CMD</h1>
+          <h1 class="project-title-two" v-on:click="selectTwo">Lennon</h1>
+          <div class="row" v-if="isSelect == 2">
+            <div class="project-num-container">
+              <p class="project-num">02</p>
+              <span class="project-line-two"></span>
+            </div>
+            <div class="project-content-container">
+              <p class="project-content">
+                Body - Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                sed diam nonumy eirmod tempor invidunt ut
+                labore et consertur lorem.
+              </p>
+            </div>
+          </div>
+          <h1 class="project-title-three" v-on:click="selectThree">Superliga<br> CMD</h1>
+          <div class="row" v-if="isSelect == 3">
+            <div class="project-num-container">
+              <p class="project-num">03</p>
+              <span class="project-line-three"></span>
+            </div>
+            <div class="project-content-container">
+              <p class="project-content">
+                Body - Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                sed diam nonumy eirmod tempor invidunt ut
+                labore et consertur lorem.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -30,7 +56,23 @@
 
 <script>
 export default {
-  name: 'Project'
+  name: 'Project',
+  data () {
+    return {
+      isSelect: 1
+    }
+  },
+  methods: {
+    selectOne: function (event) {
+      this.isSelect = 1
+    },
+    selectTwo: function (event) {
+      this.isSelect = 2
+    },
+    selectThree: function (event) {
+      this.isSelect = 3
+    }
+  }
 }
 </script>
 

@@ -7,26 +7,26 @@
     </div>
     <div class="row navigator-row">
       <div class="col-md-3 navigator-col">
-        <img src="../../assets/img/p-1.png"/>
+        <img src="../../assets/img/Bembos.svg"/>
       </div>
       <div class="col-md-3 navigator-col">
-        <img src="../../assets/img/p-2.png"/>
+        <img src="../../assets/img/Isil.svg"/>
       </div>
       <div class="col-md-3 navigator-col navigator-margin">
-        <img src="../../assets/img/p-3.png"/>
+        <img src="../../assets/img/Ferreyros.svg"/>
       </div>
       <div class="col-md-3 navigator-col navigator-margin">
-        <img src="../../assets/img/p-4.png"/>
+        <img src="../../assets/img/Utec.svg"/>
       </div>
     </div>
     <div class="row navigator-row">
       <div class="col-md-3">
       </div>
       <div class="col-md-3 navigator-col">
-        <img src="../../assets/img/p-5.png"/>
+        <img src="../../assets/img/Entel.svg"/>
       </div>
       <div class="col-md-3 navigator-col">
-        <img src="../../assets/img/p-6.png"/>
+        <img src="../../assets/img/Plazave.svg"/>
       </div>
       <div class="col-md-3">
       </div>

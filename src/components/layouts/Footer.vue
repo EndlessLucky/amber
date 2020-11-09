@@ -3,7 +3,7 @@
     <div class="about-container">
       <div class="row">
         <div class="col-md-6">
-          <img class="logo-img" src="../../assets/img/Logo-4.png">
+          <img class="logo-img" src="../../assets/img/logo-white.svg">
         </div>
         <div class="col-md-6 footer-content-col">
           <p class="footer-content">

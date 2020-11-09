@@ -5,7 +5,7 @@
         <h1 class="solution-advertise-title">Pensar fuera de la caja es parte de nuestro ADN</h1>
       </div>
     </div>
-    <img class="solution-advertise-img" src="../../assets/img/man-front.png"/>
+    <img class="solution-advertise-img" src="../../assets/img/solution-bg1.svg"/>
     <div class="solution-advertise-bg">
       <div class="about-container">
         <div class="row">
@@ -30,7 +30,7 @@
           </div>
         </div>
       </div>
-      <img class="solution-advertise-img-one" src="../../assets/img/discussing.png"/>
+      <img class="solution-advertise-img-one" src="../../assets/img/solution-bg2.svg"/>
     </div>
     <div class="about-container">
         <div class="row partner-row">

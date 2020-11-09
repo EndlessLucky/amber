@@ -1,6 +1,6 @@
 /*Whole site*/
 body{
-    font-family: 'Montserrat'!important;
+    font-family: 'Montserrat', sans-serif!important;
     /* height: 5000px; */
 }
 
@@ -8,7 +8,8 @@ body{
 @media only screen and (min-width: 765px) {
     .nav-bar{
         background-color: transparent!important;
-        font-size: 11px;
+        font-size: 14px;
+        height: 100px;
     }
     .navbar-brand{
         position: absolute;
@@ -19,10 +20,11 @@ body{
     }
     .footer-2{
         display: none;
-    }
+    }    
 }
-@media only screen and (max-width: 765px) {
+@media only screen and (max-width: 765px) {    
     .nav-bar{
+        background-color: #131b27!important;
         top:0px!important;
         text-align: center;
         font-weight: bold;
@@ -35,9 +37,16 @@ body{
         margin-bottom: 20px;
     }
 }
+.change_color {
+    background-color: #131b27!important;
+    height: 100px;
+}
+.nav-slash{
+    color: #FD6B21;
+}
 .logo-img{
     width: auto;
-    height: 25px;
+    height: px;
 }
 .logo-img-black{
     width: auto;
@@ -46,10 +55,8 @@ body{
 .nav-bar{
     position: fixed!important;
     width: 100%;
-    padding-top: 20px;
-    background-color: transparent!important;
-    z-index: 1;
-    
+    padding: 0px;
+    z-index: 1;    
 }
 .nav-link{
     color: white!important;
@@ -82,6 +89,7 @@ body{
     .landing-content{
         font-size: 14px;
         line-height: 2.5;
+        font-weight: bold;
     }
     .line1 {
         width: 474px;
@@ -101,13 +109,13 @@ body{
         left: 31px;
     }
     .line3 {
-        width: 215px!important;
+        width: 500px!important;
         height: 47px;
         border-bottom: 1px solid #FD6B21;
         transform: translateY(-20px) translateX(5px) rotate(-78deg);
         position: absolute;
-        top: 575px;
-        left: 40px;
+        top: 713px;
+        left: -131px;
     }
 }
 @media only screen and (max-width: 765px) {
@@ -123,6 +131,7 @@ body{
     }
     .landing-content{
         font-size: 16px;
+        font-weight: bold;
     }
     .line1 {
         width: 474px;
@@ -154,14 +163,12 @@ body{
 .masthead {
     position: relative;
     width: 100%;
-    height: auto;
-    min-height: 35rem;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.7) 75%, #000000 100%), url("../img/home-page-image.png");
+    height: 970px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.7) 75%, #000000 100%), url("../img/home-bg.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: cover;
-    height: 100vh;
 }
 .landing-title{
     color: white;
@@ -177,7 +184,7 @@ body{
         font-size: 62px;
     }
     .about-container{
-        padding:77px 21% 30px 21%;
+        padding:77px 30% 30px 30%;
     }
 }
 @media only screen and (max-width: 765px) {
@@ -196,7 +203,6 @@ body{
 }
 .about-content{
     font-size: 14px;
-    font-weight: bold;
     line-height: 2.5;
 }
 .about-link{
@@ -207,7 +213,7 @@ body{
 .about-line-one {
     width: 43px;
     height: 47px;
-    border-bottom: 3.2px solid #00adf0;
+    border-bottom: 2px solid #00adf0;
     transform: translateY(-20px) translateX(5px) rotate(0deg);
     position: absolute;
     top: 2px;
@@ -216,7 +222,7 @@ body{
 .about-line-two {
     width: 13px;
     height: 0px;
-    border-bottom: 3.2px solid #00adf0;
+    border-bottom: 2px solid #00adf0;
     transform: translateY(-20px) translateX(5px) rotate(-78deg);
     position: absolute;
     top: 53px;
@@ -280,11 +286,12 @@ body{
     }
 }
 .piratas-background{
-    background-image: url(../img/logo.png);
+    background-image: url(../img/piratas.svg);
     background-size: cover;
-    height: 432px;
+    height: 100%;
     width: auto;
     background-repeat: no-repeat;
+    background-color: #131b27;
 }
 .piratas-title{
     text-transform: uppercase;
@@ -318,7 +325,7 @@ body{
     width: 100%;
     height: 760px;
     min-height: 35rem;
-    background: linear-gradient(180deg,rgba(0,0,0,.2) 0,rgba(0,0,0,.7) 100%,#000),url(../img/4-1.png);
+    background: linear-gradient(180deg,rgba(0,0,0,.2) 0,rgba(0,0,0,.7) 100%,#000),url(../img/woman-boat.svg);
     background-position: 50%;
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -328,18 +335,21 @@ body{
     font-size: 42px;
     font-weight: bold;
     color: white;
+    cursor: pointer;
 }
 .project-title-two{
     margin-top: 30px;
     font-size: 42px;
     font-weight: bold;
     color: white;
+    cursor: pointer;
 }
 .project-title-three{
     margin-top: 40px;
     font-size: 42px;
     font-weight: bold;
     color: white;
+    cursor: pointer;
 }
 .project-content{
     font-size: 14px;
@@ -352,7 +362,7 @@ body{
     font-size: 14px;
     color: #fd6b00;
 }
-.project-line{
+.project-line-one{
     width: 60px;
     height: 293px;
     border-bottom: 1px solid #FD6B21;
@@ -360,6 +370,26 @@ body{
     transform: translateY(34px) translateX(5px) rotate(-80deg);
     position: absolute;
     top: -55px;
+    left: -110px;
+}
+.project-line-two{
+    width: 60px;
+    height: 293px;
+    border-bottom: 1px solid #FD6B21;
+    -webkit-transform: translateY(34px) translateX(5px) rotate(-70deg);
+    transform: translateY(34px) translateX(5px) rotate(-80deg);
+    position: absolute;
+    top: 20px;
+    left: -110px;
+}
+.project-line-three{
+    width: 60px;
+    height: 293px;
+    border-bottom: 1px solid #FD6B21;
+    -webkit-transform: translateY(34px) translateX(5px) rotate(-70deg);
+    transform: translateY(34px) translateX(5px) rotate(-80deg);
+    position: absolute;
+    top: 160px;
     left: -110px;
 }
 .project-num-container{
@@ -371,17 +401,11 @@ body{
 
 /* Contact section */
 @media only screen and (max-width: 765px) {
-    .contact-title{
-        width: 100%;
-    }
     .rwap-1::after {
         right: 19%!important;
     }
 }
 @media only screen and (min-width: 765px) {
-    .contact-title{
-        width: 80%;
-    }
     .rwap-1::after {
         right: 35.5%;
     }
@@ -401,7 +425,6 @@ body{
 .contact-title{
     text-align: center;
     font-size: 28px;
-    font-weight: bold;
     line-height: 1.5;
 }
 .slantButton{
@@ -431,9 +454,9 @@ body{
 .slantButton:after {
     content: '';
     position: absolute;
-    top: -8px;
-    right: -17px;
-    border-left: 3px solid #fd6b00;
+    top: -7px;
+    right: -23px;
+    border-left: 2px solid #fd6b00;
     width: 10px;
     height: 12px;
     transform: rotate(12deg);
@@ -455,7 +478,7 @@ body{
     top: -14px;
     width: 44px;
     height: 24px;
-    border-top: 3px solid #fd6b00;
+    /* border-top: 3px solid #fd6b00; */
 }
 .rwap-1:hover::after {
     width: 54px;
@@ -464,11 +487,23 @@ body{
 .contact-line {
     width: 43px;
     height: 47px;
-    border-bottom: 3.2px solid #00adf0;
+    border-bottom: 2px solid #fd6b00;
     transform: translateY(-20px) translateX(5px) rotate(0deg);
     position: absolute;
     top: -38px;
-    left: 10px;
+    left: 159px;
+}
+.contact-btn-border:hover .contact-line {
+    width: 80px;
+    left: 120px;
+    transition: all 0.5S;
+}
+.contact-btn-border{
+    position: relative;
+}
+.contact-btn-col{
+    display: flex;
+    justify-content: center;
 }
 
 /* Footer section */

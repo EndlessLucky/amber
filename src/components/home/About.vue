@@ -7,7 +7,7 @@
       </div>
       <div class="col-md-6">
         <p class="about-content">
-          Hemos estado construyendo silenciosamente los principios del desarrollo del Diseño Web y Apps.
+          Hemos estado construyendo silenciosamente los principios del desarrollo del Diseño Web y Apps.<br>
           El diseño ya no sólo significa web, móvil o social, significa interfaces, innumerables tipos de pantalla y la interacción humana real y cercana.
           <br><br>Si tiene una pantalla entonces diseñamos, desarrollamos y creamos la experiencia que sus usuarios y negocios necesitan.
           Ponemos un montón de trabajo para que esto se vea fácil, porque nos gusta lo que hacemos.
