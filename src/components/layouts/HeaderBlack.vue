@@ -21,7 +21,7 @@
         </b-nav-item>
         <b-nav-item href="#" @mouseover="talentOver" @mouseleave="talentLeave">
           <span class="nav-slash" v-if="talentSlash">/</span>
-          Talento
+          <router-link v-bind:to="{ name: 'Talent' }">Talento</router-link>
         </b-nav-item>
         <b-nav-item href="#" @mouseover="projectOver" @mouseleave="projectLeave">
           <span class="nav-slash" v-if="projectSlash">/</span>

@@ -1,0 +1,60 @@
+/* About section */
+@media only screen and (min-width: 765px) {
+  .talent-about-container{
+    height: 100vh;
+    padding: 20% 30% 20% 30%;
+  }
+}
+@media only screen and (max-width: 765px) {
+  .talent-about-container{
+    height: 100vh;
+    padding: 20% 39.5px 30px 10%
+  }
+}
+.talent-about-title{
+  font-size: 44px;
+  font-weight: bold;
+  color: #fd6b00;
+}
+
+/* Architect section */
+@media only screen and (min-width: 765px) {
+  .talent-architect-col-left{
+    border: 1px solid #fd6b00;
+    margin-right: 10px;
+  }
+  .talent-architect-col-right{
+    border: 1px solid #fd6b00;
+    margin-left: 10px;
+  }
+}
+@media only screen and (max-width: 765px) {
+  .talent-architect-col-left{
+    background-color: #f6f6f6;
+  }
+  .talent-architect-img{
+    width: 136px;
+  }
+}
+.talent-architect-row{
+  justify-content: center;
+}
+.talent-architect-content-left{
+  padding-top: 20px;
+  padding-left: 46px;
+  width: 50%;
+}
+.talent-architect-content-right{
+  padding-top: 20px;
+  padding-left: 46px;
+  width: 50%;
+}
+.talent-architect-title{
+  font-size: 28px;
+  font-weight: bold;
+}
+
+/* CV section */
+.talent-CV{
+  padding:0!important;
+}
