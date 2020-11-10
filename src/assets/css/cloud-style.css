@@ -1,0 +1,36 @@
+/* About section */
+@media only screen and (min-width: 765px) {
+  .cloud-about-img{
+    padding-left: 20%;
+    padding-right: 20%;
+  }  
+}
+@media only screen and (max-width: 765px) {
+  .cloud-space{
+    height: 50px!important;
+  }
+}
+.cloud-space{
+  height: 400px;
+}
+.cloud-about-img{
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+.cloud-about-title{
+  font-size: 42px;
+  font-weight: bold;
+}
+.cloud-about-subtitle{
+  font-size: 28px;
+  font-weight: bold;
+}
+.cloud-about-col{
+  padding-top: 5%;
+  padding-right: 15%;
+}
+.cloud-bg{
+  position: relative;
+  height: 760px;
+}

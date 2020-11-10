@@ -1,5 +1,5 @@
 <template>
-  <b-navbar class="nav-bar" toggleable="lg" type="dark" variant="info" >
+  <b-navbar class="nav-bar" toggleable="lg" type="dark">
     <b-navbar-brand href="">
       <router-link v-bind:to="{ name: 'Home' }">
         <img class="logo-img" src="../../assets/img/logo-white.svg" v-if="!isblackLogo">

@@ -152,8 +152,8 @@
   position: relative;
   width: 100%;
   height: auto;
-  padding-left: 9%;
-  padding-right: 9%;
+  padding-left: 20%;
+  padding-right: 20%;
 }
 
 /* Navigation section */
@@ -175,3 +175,4 @@
 .navigator-row{
   margin-top: 13%;
 }
+

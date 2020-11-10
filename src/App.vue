@@ -17,4 +17,5 @@ export default {
   @import 'assets/css/talent-style.css';
   @import 'assets/css/project-style.css';
   @import 'assets/css/contact-style.css';
+  @import 'assets/css/cloud-style.css';
 </style>

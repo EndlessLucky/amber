@@ -5,8 +5,10 @@
     </div>
     <div class="row">
       <div class="col-md-6 DNA-card">
-        <h1 class="DNA-title-one">Cloud</h1>
-        <h1 class="DNA-title-two">Adoption</h1>
+        <router-link v-bind:to="{ name: 'Cloud' }">
+          <h1 class="DNA-title-one">Cloud</h1>
+          <h1 class="DNA-title-two">Adoption</h1>
+        </router-link>
         <p class="about-content">
           Ayudamos a cambiar tus modos operativos y adaptarte a los nuevos entornos de trabajo Cloud.
         </p>

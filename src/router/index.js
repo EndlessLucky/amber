@@ -6,6 +6,7 @@ import Piratas from '../components/pages/Piratas'
 import Talent from '../components/pages/Talent'
 import Project from '../components/pages/Project'
 import Contact from '../components/pages/Contact'
+import Cloud from '../components/pages/Cloud'
 
 Vue.use(Router)
 
@@ -40,6 +41,11 @@ export default new Router({
       path: '/contact',
       name: 'Contact',
       component: Contact
+    },
+    {
+      path: '/cloud',
+      name: 'Cloud',
+      component: Cloud
     }
   ]
 })
