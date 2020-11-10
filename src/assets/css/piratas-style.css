@@ -11,3 +11,43 @@
   background-size: cover;
   height: 100vh;
 }
+
+/* About section */
+@media only screen and (min-width: 765px) {
+  .piratas-bg-col-left{
+    display: flex;
+    justify-content: flex-end;
+  }
+  .piratas-bg-col-right{
+    padding-top: 150px;
+  }
+  .piratas-offer-title{
+    color: black;
+    padding-right: 40%;
+  }
+}
+@media only screen and (max-width: 765px) {
+  .piratas-bg-one{
+    width: 296px;
+    height: 348px;
+  }
+  .piratas-bg-two{
+    width: 296px;
+    height: 348px;
+  }
+  .piratas-offer-title{
+    color: black;
+    font-size: 26px;
+  }
+}
+.piratas-partner-title{
+  text-align: center;
+  font-size: 28px;
+  color: #fd6b00;
+  font-weight: bold;
+  line-height: 1.5;
+}
+.profile-text{
+  margin-top: 10px;
+  font-size: 14px;
+}

@@ -56,7 +56,7 @@
 
 <script>
 export default {
-  name: 'Header',
+  name: 'HeaderBlack',
   data () {
     return {
       collapseColor: 'transparent!important',
@@ -129,15 +129,15 @@ export default {
 </script>
 <style scoped>
   .nav-link{
-    color: white!important;
+    color: black!important;
     margin-right: 20px;
   }
   .nav-link a{
-    color: white!important;
-    text-decoration: none!important;
+      color: black!important;
+      text-decoration: none!important;
   }
   .change_color {
-    background-color: #131b27!important;
+    background-color: white!important;
     height: 100px;
   }
 </style>

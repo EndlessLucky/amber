@@ -92,15 +92,16 @@
     flex-direction: row-reverse;    
   }
 }
-
 .DNA-container{
   padding: 0px 10% 30px 10%;
 }
-
 .DNA-text{
   margin-top:25px;  
   color: #131b27;
   font-weight: bold;  
+}
+.DNA-img-row{
+  justify-content: center;
 }
 
 /* Advertise section */
