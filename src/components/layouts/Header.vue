@@ -29,7 +29,7 @@
         </b-nav-item>
         <b-nav-item href="#" @mouseover="connectOver" @mouseleave="connectLeave">
           <span class="nav-slash" v-if="connectSlash">/</span>
-          Conecta
+          <router-link v-bind:to="{ name: 'Contact' }">Conecta</router-link>
         </b-nav-item>
       </b-navbar-nav>
       <div class="footer-2" v-if="collapse == true">

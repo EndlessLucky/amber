@@ -5,6 +5,7 @@ import Solution from '../components/pages/Solution'
 import Piratas from '../components/pages/Piratas'
 import Talent from '../components/pages/Talent'
 import Project from '../components/pages/Project'
+import Contact from '../components/pages/Contact'
 
 Vue.use(Router)
 
@@ -34,6 +35,11 @@ export default new Router({
       path: '/project',
       name: 'Project',
       component: Project
+    },
+    {
+      path: '/contact',
+      name: 'Contact',
+      component: Contact
     }
   ]
 })

@@ -1,0 +1,72 @@
+/* About section */
+@media only screen and (min-width: 765px) {
+  .contact-about-container{
+    height: 100vh;
+    padding: 15% 25% 0px 25%;
+  }
+  .contact-right{
+    padding-top:10%;
+  }
+}
+@media only screen and (max-width: 765px) {
+  .contact-about-container{
+    height: 100vh;
+    padding: 20% 39.5px 30px 10%
+  }
+  .contact-img{
+    width: 296px;
+    height: 296px;
+  }
+}
+.contact-about-title{
+  font-size: 44px;
+  font-weight: bold;
+}
+.contact-about-content{
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* Info section */
+@media only screen and (min-width: 765px) {
+  .contact-info-container{
+    padding: 0px 25% 0px 31%;
+  }
+}
+@media only screen and (max-width: 765px) {
+  .contact-info-container{
+    padding: 20% 39.5px 30px 10%
+  }
+}
+.contact-info-map{
+  width: 100%;
+  height: auto;
+}
+.contact-info-title{
+  font-size: 10px;
+  font-weight: bold;
+}
+.contact-info-content{
+  font-size: 14px;
+}
+.contact-img-row{
+  margin-top: 5%;
+  padding-left: 2%;
+}
+
+/* Form section */
+.contact-form-title{
+  font-size: 28px;
+  font-weight: bold;
+  color: #fd6b00;
+}
+.contact-form-row{
+  margin-top: 15%;
+}
+.contact-input-row{
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.contact-button-row{
+  margin-bottom: 10%;
+}
