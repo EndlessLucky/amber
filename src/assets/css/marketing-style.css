@@ -1,0 +1,49 @@
+/* Landing section */
+@media only screen and (min-width: 765px) {
+  .marketing-landing-content-container{
+    padding-left: 15%;
+    padding-top: 30%;
+    padding-right: 65%;
+  }
+  .marketing-landing-title-container{
+    padding-left: 10%;
+    padding-top: 1%;
+    padding-right: 65%;
+  }
+}
+@media only screen and (max-width: 765px) {
+  .marketing-landing-content-container{
+    padding-left: 10%;
+    padding-top: 120%;
+    padding-right: 15%;
+  }
+  .marketing-landing-title-container{
+    padding-left: 10%;
+    padding-top: 1%;
+    padding-right: 15%;
+  }
+}
+
+/* About section */
+@media only screen and (min-width: 765px) {
+  .marketing-title{
+    padding-right: 35%;
+  }
+}
+@media only screen and (max-width: 765px) {
+  .marketing-title{
+    padding-right: 0px;
+  }
+  .marketing-img-one{
+    padding-left: 55px;
+    padding-right: 55px;
+  }
+  .crop-img{
+    object-fit: cover;
+    height: 348px!important;
+  }
+}
+.marketing-img-one{
+  width: 100%;
+  height: auto;
+}

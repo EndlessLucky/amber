@@ -3,7 +3,9 @@
     <div class="project-container">
       <div class="row">
         <div class="col-md-6 DNA-card">
+          <router-link v-bind:to="{ name: 'Marketing' }">
           <h1 class="project-page-one" v-on:click="selectOne">Latin Surf</h1>
+          </router-link>
           <div class="row project-page-row" v-if="isSelect == 1">
             <div class="project-num-container">
               <p class="project-num">01</p>

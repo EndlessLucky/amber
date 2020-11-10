@@ -115,7 +115,7 @@ export default {
     }
   },
   mounted () {
-    if (this.$route.name === 'Home' || this.$route.name === 'Project') {
+    if (this.$route.name === 'Home' || this.$route.name === 'Project' || this.$route.name === 'Marketing') {
       this.isblackLogo = false
     } else {
       this.isblackLogo = true

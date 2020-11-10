@@ -7,6 +7,7 @@ import Talent from '../components/pages/Talent'
 import Project from '../components/pages/Project'
 import Contact from '../components/pages/Contact'
 import Cloud from '../components/pages/Cloud'
+import Marketing from '../components/pages/Marketing'
 
 Vue.use(Router)
 
@@ -46,6 +47,11 @@ export default new Router({
       path: '/cloud',
       name: 'Cloud',
       component: Cloud
+    },
+    {
+      path: '/marketing',
+      name: 'Marketing',
+      component: Marketing
     }
   ]
 })
