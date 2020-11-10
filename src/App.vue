@@ -15,4 +15,5 @@ export default {
   @import 'assets/css/solution-style.css';
   @import 'assets/css/piratas-style.css';
   @import 'assets/css/talent-style.css';
+  @import 'assets/css/project-style.css';
 </style>

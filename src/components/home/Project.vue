@@ -1,3 +1,4 @@
+
 <template>
   <div class="project-background">
     <div class="about-container">
@@ -77,5 +78,4 @@ export default {
 </script>
 
 <style scoped>
-
 </style>

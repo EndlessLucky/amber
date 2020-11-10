@@ -4,6 +4,7 @@ import Home from '../components/pages/Home'
 import Solution from '../components/pages/Solution'
 import Piratas from '../components/pages/Piratas'
 import Talent from '../components/pages/Talent'
+import Project from '../components/pages/Project'
 
 Vue.use(Router)
 
@@ -28,6 +29,11 @@ export default new Router({
       path: '/talent',
       name: 'Talent',
       component: Talent
+    },
+    {
+      path: '/project',
+      name: 'Project',
+      component: Project
     }
   ]
 })

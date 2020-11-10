@@ -25,7 +25,7 @@
         </b-nav-item>
         <b-nav-item href="#" @mouseover="projectOver" @mouseleave="projectLeave">
           <span class="nav-slash" v-if="projectSlash">/</span>
-          Proyectos
+          <router-link v-bind:to="{ name: 'Project' }">Proyectos</router-link>
         </b-nav-item>
         <b-nav-item href="#" @mouseover="connectOver" @mouseleave="connectLeave">
           <span class="nav-slash" v-if="connectSlash">/</span>

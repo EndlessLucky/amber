@@ -1,0 +1,119 @@
+/* Landing page */
+@media only screen and (min-width: 765px) {
+  .project-container{
+    padding:10% 50% 10% 10%;
+  }
+}
+@media only screen and (max-width: 765px) {
+  .project-container{
+    padding:70% 10% 10% 10%;
+  }
+  .project-page-one{
+    font-size: 36px!important;
+  }
+  .project-page-line-one{
+    top: -50px!important;
+    left: -60px!important;
+  }
+  .project-page-line-two{
+    top: -20px!important;
+    left: -50px!important;
+  }
+  .project-page-line-three{
+    top: 20px!important;
+    left: -60px!important;
+  }
+}
+.project-page{
+  height: 100vh;
+}
+.project-page-one{
+  font-size: 66px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+.project-page-two{
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+.project-page-row{
+  margin-top: 20px;
+  padding-left: 20%;
+}
+.project-page-line-one{
+  width: 60px;
+  height: 293px;
+  border-bottom: 1px solid #FD6B21;
+  -webkit-transform: translateY(34px) translateX(5px) rotate(-70deg);
+  transform: translateY(34px) translateX(5px) rotate(-80deg);
+  position: absolute;
+  top: -15px;
+  left: -30px;
+}
+.project-page-line-two{
+  width: 60px;
+  height: 293px;
+  border-bottom: 1px solid #FD6B21;
+  -webkit-transform: translateY(34px) translateX(5px) rotate(-70deg);
+  transform: translateY(34px) translateX(5px) rotate(-80deg);
+  position: absolute;
+  top: 20px;
+  left: -30px;
+}
+.project-page-line-three{
+  width: 60px;
+  height: 293px;
+  border-bottom: 1px solid #FD6B21;
+  -webkit-transform: translateY(34px) translateX(5px) rotate(-70deg);
+  transform: translateY(34px) translateX(5px) rotate(-80deg);
+  position: absolute;
+  top: 60px;
+  left: -30px;
+}
+
+/* Main page */
+@media only screen and (min-width: 765px) {
+  .project-main-container{
+    padding: 8% 20% 8% 20%;
+  }
+  .project-img{
+    display: block;
+  }
+  .project-mobile-img{
+    display: none;
+  }
+}
+@media only screen and (max-width: 765px) {
+  .project-main-container{
+    padding: 8% 8% 8% 8%;
+  }
+  .project-img{
+    display: none;
+  }
+  .project-mobile-img{
+    display: block;
+  }
+}
+.main-right-col{
+  padding-left: 7%;
+}
+.project-main-row{
+  margin-bottom: 20%;
+}
+.low-col{
+  padding-top: 10%;
+}
+.project-main-title{
+  margin-top: 5%;
+  font-size: 12px;
+  font-weight: bold;
+  font-style: italic;
+  color:#FD6B21;
+}
+.project-main-content{
+  font-size: 18px;
+  font-weight: bold;
+}
