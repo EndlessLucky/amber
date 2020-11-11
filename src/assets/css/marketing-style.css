@@ -38,12 +38,62 @@
     padding-left: 55px;
     padding-right: 55px;
   }
+  .marketing-img-two{
+    padding-left: 55px!important;
+    padding-right: 55px!important;
+  }
+  .marketing-img-three{
+    padding-left: 0px!important;
+    padding-right: 0px!important;
+  }
   .crop-img{
     object-fit: cover;
     height: 348px!important;
+  }
+  .marketing-space-row-one{
+    width: 96.3%!important;
   }
 }
 .marketing-img-one{
   width: 100%;
   height: auto;
+}
+.marketing-img-two{
+  width: 100%;
+  height: auto;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.marketing-img-three{
+  width: 100%;
+  height: auto;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.img-width{
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.marketing-space-row{
+  margin-top: 5%
+}
+.marketing-color-bg{
+  margin-top: 5%;
+  background-color: #fd6b00;
+}
+.marketing-bg-title{
+  font-size: 42px;
+  font-weight: bold;
+}
+.marketing-text-stroke{
+  font-size: 86px;
+  color: #fd6b00;
+  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #fd6b00;
+}
+.marketing-stroke-content{
+  font-size: 22px;
+  font-weight: bold;
+  padding-left: 30%;
 }

@@ -3,6 +3,7 @@
     <Header/>
     <Landing/>
     <About/>
+    <Contact/>
     <Footer/>
   </div>
 </template>
@@ -11,6 +12,7 @@
 import Header from '../layouts/Header'
 import Landing from '../marketing/Landing'
 import About from '../marketing/About'
+import Contact from '../solution/Contact'
 import Footer from '../layouts/Footer'
 
 export default {
@@ -19,6 +21,7 @@ export default {
     Header,
     Landing,
     About,
+    Contact,
     Footer
   }
 }
