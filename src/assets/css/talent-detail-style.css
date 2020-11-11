@@ -1,0 +1,23 @@
+/* Landing section */
+@media only screen and (min-width: 765px) {
+  .talent-detail-landing-container{
+    height: 100vh;
+    padding: 20% 30% 20% 30%;
+  }
+}
+@media only screen and (max-width: 765px) {
+  .talent-detail-landing-container{
+    height: 100vh;
+    padding: 20% 39.5px 30px 10%
+  }
+}
+.talent-img{
+  width: 100%;
+  height: auto;
+}
+
+/* About section */
+.talent-detail-about-title{
+  font-size: 42px;
+  font-weight: bold;
+}

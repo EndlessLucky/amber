@@ -8,6 +8,7 @@ import Project from '../components/pages/Project'
 import Contact from '../components/pages/Contact'
 import Cloud from '../components/pages/Cloud'
 import Marketing from '../components/pages/Marketing'
+import TalentDetail from '../components/pages/TalentDetail'
 
 Vue.use(Router)
 
@@ -52,6 +53,11 @@ export default new Router({
       path: '/marketing',
       name: 'Marketing',
       component: Marketing
+    },
+    {
+      path: '/talentdetail',
+      name: 'TalentDetail',
+      component: TalentDetail
     }
   ]
 })

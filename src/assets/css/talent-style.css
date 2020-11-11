@@ -53,6 +53,11 @@
   font-size: 28px;
   font-weight: bold;
 }
+.talent-architect-row a{
+  color: black!important;
+  text-decoration: none!important;
+}
+
 
 /* CV section */
 .talent-CV{

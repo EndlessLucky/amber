@@ -19,4 +19,5 @@ export default {
   @import 'assets/css/contact-style.css';
   @import 'assets/css/cloud-style.css';
   @import 'assets/css/marketing-style.css';
+  @import 'assets/css/talent-detail-style.css';
 </style>
