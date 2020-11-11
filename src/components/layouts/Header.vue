@@ -12,23 +12,33 @@
     <b-collapse id="nav-collapse" is-nav :class="{change_color: scrollPosition > 50}">
       <b-navbar-nav id="nav-item" class="ml-auto">
         <b-nav-item href="" @mouseover="solutionOver" @mouseleave="solutionLeave">
-          <span class="nav-slash" v-if="solutionSlash">/</span>
+          <transition name="fade" mode="out-in">
+            <span class="nav-slash" v-if="solutionSlash">/</span>
+          </transition>
           <router-link v-bind:to="{ name: 'Solution' }">Soluciones</router-link>
         </b-nav-item>
         <b-nav-item href="#" @mouseover="piratasOver" @mouseleave="piratasLeave">
-          <span class="nav-slash" v-if="piratasSlash">/</span>
+          <transition name="fade" mode="out-in">
+            <span class="nav-slash" v-if="piratasSlash">/</span>
+          </transition>
           <router-link v-bind:to="{ name: 'Piratas' }">Piratas</router-link>
         </b-nav-item>
         <b-nav-item href="#" @mouseover="talentOver" @mouseleave="talentLeave">
-          <span class="nav-slash" v-if="talentSlash">/</span>
+          <transition name="fade" mode="out-in">
+            <span class="nav-slash" v-if="talentSlash">/</span>
+          </transition>
           <router-link v-bind:to="{ name: 'Talent' }">Talento</router-link>
         </b-nav-item>
         <b-nav-item href="#" @mouseover="projectOver" @mouseleave="projectLeave">
-          <span class="nav-slash" v-if="projectSlash">/</span>
+          <transition name="fade" mode="out-in">
+            <span class="nav-slash" v-if="projectSlash">/</span>
+          </transition>
           <router-link v-bind:to="{ name: 'Project' }">Proyectos</router-link>
         </b-nav-item>
         <b-nav-item href="#" @mouseover="connectOver" @mouseleave="connectLeave">
-          <span class="nav-slash" v-if="connectSlash">/</span>
+          <transition name="fade" mode="out-in">
+            <span class="nav-slash" v-if="connectSlash">/</span>
+          </transition>
           <router-link v-bind:to="{ name: 'Contact' }">Conecta</router-link>
         </b-nav-item>
       </b-navbar-nav>
@@ -129,6 +139,9 @@ export default {
 </script>
 <style scoped>
   .nav-link{
+    width: 110px;
+    padding-left: 0px;
+    padding-right: 0px;
     color: white!important;
     margin-right: 20px;
   }
@@ -139,5 +152,15 @@ export default {
   .change_color {
     background-color: #131b27!important;
     height: 100px;
+  }
+  .fade-enter-active, .fade-leave-active {
+    transition: opacity .5s;
+  }
+  .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+    opacity: 0;
+  }
+  .nav-link:hover a{
+    transform: translateX(10px);
+    transition: all .3s ease;
   }
 </style>
