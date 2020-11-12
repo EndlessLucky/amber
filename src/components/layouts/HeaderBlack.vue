@@ -32,7 +32,7 @@
         <b-nav-item href="#" @mouseover="projectOver" @mouseleave="projectLeave">
           <transition name="fade" mode="out-in">
             <span class="nav-slash" v-if="projectSlash">/</span>
-          </transition>>
+          </transition>
           <router-link v-bind:to="{ name: 'Project' }">Proyectos</router-link>
         </b-nav-item>
         <b-nav-item href="#" @mouseover="connectOver" @mouseleave="connectLeave">

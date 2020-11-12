@@ -20,4 +20,5 @@ export default {
   @import 'assets/css/cloud-style.css';
   @import 'assets/css/marketing-style.css';
   @import 'assets/css/talent-detail-style.css';
+  @import 'assets/css/sidebar-style.css';
 </style>

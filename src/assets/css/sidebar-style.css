@@ -1,0 +1,21 @@
+.b-sidebar{
+  background-color: #131b27!important;
+}
+.form-container{
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.custom-input{
+  background-color: #131b27!important;
+  border: 1px solid white;
+  color: white;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+}
+.input-title{
+  margin: 0px;
+}
+.input-row{
+  margin-top: 30px;
+}
