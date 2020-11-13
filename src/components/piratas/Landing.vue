@@ -1,7 +1,7 @@
 <template>
   <header class="piratas-masthead">
     <div class="solution-landing-title-container">
-      <h1 class="landing-title">Piratas a bordo</h1>
+      <h1 class="landing-title">Piratas<br> a bordo</h1>
     </div>
     <div class="solution-landing-content-container">
       <p class="landing-content">“Aquellos que están lo suficientemente locos como para creer que puede cambiar

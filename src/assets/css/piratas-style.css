@@ -23,7 +23,7 @@
   }
   .piratas-offer-title{
     color: black;
-    padding-right: 40%;
+    padding-right: 10%;
   }
 }
 @media only screen and (max-width: 765px) {
@@ -44,10 +44,12 @@
   text-align: center;
   font-size: 28px;
   color: #fd6b00;
-  font-weight: bold;
   line-height: 1.5;
 }
 .profile-text{
   margin-top: 10px;
   font-size: 14px;
+}
+.about-footer a{
+  text-decoration: none!important;
 }

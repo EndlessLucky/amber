@@ -9,7 +9,9 @@
           <div class="contact-btn-border">
             <div class="contact-line"></div>
             <span class="rwap-1">
-              <a href="/contacto" class="slantButton text-white">Contactanos</a>
+              <router-link v-bind:to="{ name: 'Contact' }">
+                <a class="slantButton text-white">Contactanos</a>
+              </router-link>
             </span>
           </div>
         </div>

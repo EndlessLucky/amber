@@ -1,6 +1,7 @@
 <template>
   <div>
-    <Header/>
+    <Header v-if="scrollPosition < 50"/>
+    <HeaderBlack v-else/>
     <Landing/>
     <About/>
     <DNA/>
@@ -13,6 +14,7 @@
 
 <script>
 import Header from '../layouts/Header'
+import HeaderBlack from '../layouts/HeaderBlack'
 import Landing from '../solution/Landing'
 import About from '../solution/About'
 import DNA from '../solution/DNA'
@@ -25,6 +27,7 @@ export default {
   name: 'Solution',
   components: {
     Header,
+    HeaderBlack,
     Landing,
     About,
     DNA,
@@ -35,8 +38,17 @@ export default {
   },
   data () {
     return {
+      scrollPosition: null,
       contactTitle: 'Cuéntanos el reto y lo resolvemos'
     }
+  },
+  methods: {
+    updateScroll () {
+      this.scrollPosition = window.scrollY
+    }
+  },
+  mounted () {
+    window.addEventListener('scroll', this.updateScroll)
   }
 }
 </script>

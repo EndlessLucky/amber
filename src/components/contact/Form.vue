@@ -9,27 +9,27 @@
     <div class="row contact-input-row">
       <div class="col-md-6">
         <p class="contact-info-content">Nombre y apellido</p>
-        <input type="text"/>
+        <input class="form-text" type="text"/>
       </div>
       <div class="col-md-6">
         <p class="contact-info-content">Correo</p>
-        <input type="text"/>
+        <input class="form-text" type="text"/>
       </div>
     </div>
     <div class="row contact-input-row">
       <div class="col-md-6">
         <p class="contact-info-content">Número</p>
-        <input type="text"/>
+        <input class="form-text" type="text"/>
       </div>
       <div class="col-md-6">
         <p class="contact-info-content">Tu empresa</p>
-        <input type="text"/>
+        <input class="form-text" type="text"/>
       </div>
     </div>
     <div class="row contact-input-row">
       <div class="col-md-6">
         <p class="contact-info-content">Cómo te podemos ayudar</p>
-        <input type="text"/>
+        <input class="form-text" type="text"/>
       </div>
     </div>
     <div class="row contact-button-row">

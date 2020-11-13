@@ -8,49 +8,55 @@
       <div class="row">
         <div class="col-md-6 DNA-card">
           <router-link v-bind:to="{ name: 'Marketing' }">
-          <h1 class="project-title-one" v-on:click="selectOne">Latin Surf</h1>
+          <h1 class="project-title-one" @mouseover="firstOver">Latin Surf</h1>
           </router-link>
-          <div class="row" v-if="isSelect == 1">
-            <div class="project-num-container">
-              <p class="project-num">01</p>
-              <span class="project-line-one"></span>
+          <transition name="fade" mode="out-in">
+            <div class="row" v-if="isSelect == 1">
+              <div class="project-num-container">
+                <p class="project-num">01</p>
+                <span class="project-line-one"></span>
+              </div>
+              <div class="project-content-container">
+                <p class="project-content">
+                  Body - Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                  sed diam nonumy eirmod tempor invidunt ut
+                  labore et consertur lorem.
+                </p>
+              </div>
             </div>
-            <div class="project-content-container">
-              <p class="project-content">
-                Body - Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-                sed diam nonumy eirmod tempor invidunt ut
-                labore et consertur lorem.
-              </p>
+          </transition>
+          <h1 class="project-title-two" @mouseover="secondOver">Lennon</h1>
+          <transition name="fade" mode="out-in">
+            <div class="row" v-if="isSelect == 2">
+              <div class="project-num-container">
+                <p class="project-num">02</p>
+                <span class="project-line-two"></span>
+              </div>
+              <div class="project-content-container">
+                <p class="project-content">
+                  Body - Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                  sed diam nonumy eirmod tempor invidunt ut
+                  labore et consertur lorem.
+                </p>
+              </div>
             </div>
-          </div>
-          <h1 class="project-title-two" v-on:click="selectTwo">Lennon</h1>
-          <div class="row" v-if="isSelect == 2">
-            <div class="project-num-container">
-              <p class="project-num">02</p>
-              <span class="project-line-two"></span>
+          </transition>
+          <h1 class="project-title-three" @mouseover="thirdOver">Superliga<br> CMD</h1>
+          <transition name="fade" mode="out-in">
+            <div class="row" v-if="isSelect == 3">
+              <div class="project-num-container">
+                <p class="project-num">03</p>
+                <span class="project-line-three"></span>
+              </div>
+              <div class="project-content-container">
+                <p class="project-content">
+                  Body - Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                  sed diam nonumy eirmod tempor invidunt ut
+                  labore et consertur lorem.
+                </p>
+              </div>
             </div>
-            <div class="project-content-container">
-              <p class="project-content">
-                Body - Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-                sed diam nonumy eirmod tempor invidunt ut
-                labore et consertur lorem.
-              </p>
-            </div>
-          </div>
-          <h1 class="project-title-three" v-on:click="selectThree">Superliga<br> CMD</h1>
-          <div class="row" v-if="isSelect == 3">
-            <div class="project-num-container">
-              <p class="project-num">03</p>
-              <span class="project-line-three"></span>
-            </div>
-            <div class="project-content-container">
-              <p class="project-content">
-                Body - Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-                sed diam nonumy eirmod tempor invidunt ut
-                labore et consertur lorem.
-              </p>
-            </div>
-          </div>
+          </transition>
         </div>
       </div>
     </div>
@@ -66,13 +72,13 @@ export default {
     }
   },
   methods: {
-    selectOne: function (event) {
+    firstOver: function () {
       this.isSelect = 1
     },
-    selectTwo: function (event) {
+    secondOver: function () {
       this.isSelect = 2
     },
-    selectThree: function (event) {
+    thirdOver: function () {
       this.isSelect = 3
     }
   }
@@ -80,4 +86,10 @@ export default {
 </script>
 
 <style scoped>
+  .fade-enter-active, .fade-leave-active {
+    transition: opacity .5s;
+  }
+  .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+    opacity: 0;
+  }
 </style>

@@ -71,7 +71,7 @@ export default {
     return {
       collapseColor: 'transparent!important',
       collapse: false,
-      isblackLogo: false,
+      isblackLogo: true,
       linkColor: 'white!important',
       solutionSlash: false,
       piratasSlash: false,
@@ -125,11 +125,11 @@ export default {
     }
   },
   mounted () {
-    if (this.$route.name === 'Home' || this.$route.name === 'Project' || this.$route.name === 'Marketing') {
-      this.isblackLogo = false
-    } else {
-      this.isblackLogo = true
-    }
+    // if (this.$route.name === 'Home' || this.$route.name === 'Project' || this.$route.name === 'Marketing') {
+    //   this.isblackLogo = false
+    // } else {
+    //   this.isblackLogo = true
+    // }
     if (this.$route.name === 'Piratas') {
       this.linkColor = '#131b27!important'
     }

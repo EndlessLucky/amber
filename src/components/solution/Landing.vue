@@ -8,13 +8,25 @@
     </div>
     <div class="row solution-landing-bottom">
       <div class="col-md-4">
-        <p class="DNA-title">DISEÑO DE APLICACIONES</p>
+        <router-link v-bind:to="{ name: 'Cloud' }">
+          <p class="DNA-title">
+            DISEÑO DE APLICACIONES
+          </p>
+        </router-link>
       </div>
       <div class="col-md-4">
-        <p class="DNA-title">SOLUCIONES CLOUD</p>
+        <router-link v-bind:to="{ name: 'Cloud' }">
+          <p class="DNA-title">
+            SOLUCIONES CLOUD
+          </p>
+        </router-link>
       </div>
       <div class="col-md-4">
-        <p class="DNA-title">INTELIGENCIA DE DATOS</p>
+        <router-link v-bind:to="{ name: 'Cloud' }">
+          <p class="DNA-title">
+            INTELIGENCIA DE DATOS
+          </p>
+        </router-link>
       </div>
     </div>
   </header>

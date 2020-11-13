@@ -14,7 +14,9 @@
         </p>
       </div>
       <div class="col-md-6 about-footer">
-        <a href="/nosotros" class="about-a"><p class="about-link">Conoce más</p></a>
+        <router-link v-bind:to="{ name: 'Piratas' }">
+          <p class="about-link">Conoce más</p>
+        </router-link>
         <div class="about-line-one"></div>
         <div class="about-line-two"></div>
       </div>

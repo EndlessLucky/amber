@@ -20,11 +20,9 @@
 }
 .contact-about-title{
   font-size: 44px;
-  font-weight: bold;
 }
 .contact-about-content{
   font-size: 22px;
-  font-weight: bold;
 }
 
 /* Info section */
@@ -69,4 +67,9 @@
 }
 .contact-button-row{
   margin-bottom: 10%;
+}
+.form-text{
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
 }

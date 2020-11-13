@@ -22,8 +22,10 @@
         <img src="../../assets/img/data_insights.svg"/>
       </div>
       <div class="col-md-6 DNA-card">
-        <h1 class="DNA-title-one">Data</h1>
-        <h1 class="DNA-title-two">Insights</h1>
+        <router-link v-bind:to="{ name: 'Cloud' }">
+          <h1 class="DNA-title-one">Data</h1>
+          <h1 class="DNA-title-two">Insights</h1>
+        </router-link>
         <p class="about-content">
           Conocemos de cerca el poder de los datos, organice sus datos de manera eficiente.
         </p>
@@ -31,8 +33,10 @@
     </div>
     <div class="row">
       <div class="col-md-6 DNA-card">
-        <h1 class="DNA-title-one">Application</h1>
-        <h1 class="DNA-title-two">Modernization</h1>
+        <router-link v-bind:to="{ name: 'Cloud' }">
+          <h1 class="DNA-title-one">Application</h1>
+          <h1 class="DNA-title-two">Modernization</h1>
+        </router-link>
         <p class="about-content">
           Modernice sus aplicaciones haciéndolas más ágiles, basadas en datos, inteligentes y orientadas a la nube.
         </p>
