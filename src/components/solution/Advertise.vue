@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="about-container">
-      <div class="col-md-6">
+      <div class="col-md-8">
         <h1 class="solution-advertise-title">Pensar fuera de la caja es parte de nuestro ADN</h1>
       </div>
     </div>

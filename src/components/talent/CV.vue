@@ -18,30 +18,25 @@
     <div class="px-3 py-2">
       <div class="form-container">
         <div class="row input-row">
-          <p class="input-title text-white">Nombre y apellido</p>
-          <input class="custom-input" type="text"/>
+          <input class="custom-input" type="text" placeholder="Nombre y apellido"/>
         </div>
         <div class="row input-row">
-          <p class="input-title text-white">Correo</p>
-          <input class="custom-input" type="text"/>
+          <input class="custom-input" type="text" placeholder="Correo"/>
         </div>
-        <div class="row input-row">
-          <select class="custom-input" name="tech" id="tech">
+        <div class="row input-row option-row">
+          <select class="custom-option" name="tech" id="tech">
             <option value="Tecnologias">Tecnologias</option>
             <option value="Tecnologias1">Tecnologias1</option>
           </select>
-          <input class="custom-input" type="text"/>
         </div>
-        <div class="row input-row">
-          <select class="custom-input" name="position" id="position">
+        <div class="row input-row option-row">
+          <select class="custom-option" name="position" id="position">
             <option value="Posición">Posición</option>
             <option value="Posición1">Posición1</option>
           </select>
-          <input class="custom-input" type="text"/>
         </div>
         <div class="row input-row">
-          <p class="input-title text-white">Adjuntar CV</p>
-          <input class="custom-input" type="text"/>
+          <input class="custom-input" type="text" placeholder="Adjuntar CV"/>
         </div>
         <div class="row input-row">
           <div class="col-md-12 about-footer">
@@ -69,5 +64,11 @@ export default {
   select{
     width:81%;
     border-bottom: 0px;
+  }
+  ::placeholder{
+    color: white;
+  }
+  .custom-input{
+    color:white!important;
   }
 </style>

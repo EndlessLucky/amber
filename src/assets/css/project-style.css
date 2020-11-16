@@ -50,8 +50,8 @@
   -webkit-transform: translateY(34px) translateX(5px) rotate(-70deg);
   transform: translateY(34px) translateX(5px) rotate(-80deg);
   position: absolute;
-  top: -15px;
-  left: -30px;
+  top: -160px;
+  left: -110px;
 }
 .project-page-line-two{
   width: 60px;
@@ -60,8 +60,8 @@
   -webkit-transform: translateY(34px) translateX(5px) rotate(-70deg);
   transform: translateY(34px) translateX(5px) rotate(-80deg);
   position: absolute;
-  top: 20px;
-  left: -30px;
+  top: -160px;
+  left: -110px;
 }
 .project-page-line-three{
   width: 60px;
@@ -70,8 +70,8 @@
   -webkit-transform: translateY(34px) translateX(5px) rotate(-70deg);
   transform: translateY(34px) translateX(5px) rotate(-80deg);
   position: absolute;
-  top: 60px;
-  left: -30px;
+  top: -160px;
+  left: -110px;
 }
 
 /* Main page */

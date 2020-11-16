@@ -8,28 +8,23 @@
     </div>
     <div class="row contact-input-row">
       <div class="col-md-6">
-        <p class="contact-info-content">Nombre y apellido</p>
-        <input class="form-text" type="text"/>
+        <input class="form-text" type="text" placeholder="Nombre y apellido"/>
       </div>
       <div class="col-md-6">
-        <p class="contact-info-content">Correo</p>
-        <input class="form-text" type="text"/>
+        <input class="form-text" type="text" placeholder="Correo"/>
       </div>
     </div>
     <div class="row contact-input-row">
       <div class="col-md-6">
-        <p class="contact-info-content">Número</p>
-        <input class="form-text" type="text"/>
+        <input class="form-text" type="text" placeholder="Número"/>
       </div>
       <div class="col-md-6">
-        <p class="contact-info-content">Tu empresa</p>
-        <input class="form-text" type="text"/>
+        <input class="form-text" type="text" placeholder="Tu empresa"/>
       </div>
     </div>
     <div class="row contact-input-row">
       <div class="col-md-6">
-        <p class="contact-info-content">Cómo te podemos ayudar</p>
-        <input class="form-text" type="text"/>
+        <input class="form-text" type="text" placeholder="Cómo te podemos ayudar"/>
       </div>
     </div>
     <div class="row contact-button-row">

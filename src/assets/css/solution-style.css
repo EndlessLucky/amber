@@ -49,16 +49,16 @@
 }
 
 /* About section */
-@media only screen and (min-width: 765px) {
+/* @media only screen and (min-width: 765px) {
   .solution-about-title{
-    padding-right: 50%;
+    padding-right: 40%;
   }  
 }
 @media only screen and (max-width: 765px) {
   .solution-about-title{
     padding-right: 35%;
   }
-}
+} */
 .solution-about-title{
   font-size: 28px;
   line-height: 1.7;
@@ -162,9 +162,6 @@
 @media only screen and (max-width: 765px) {
   .navigator-col{
     width: 50%;
-  }
-  .navigator-margin{
-    margin-top: 10%;
   }
 }
 .solution-navigation-title{

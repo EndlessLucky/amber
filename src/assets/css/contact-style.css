@@ -61,15 +61,17 @@
 .contact-form-row{
   margin-top: 15%;
 }
-.contact-input-row{
-  margin-top: 5%;
-  margin-bottom: 5%;
-}
 .contact-button-row{
   margin-bottom: 10%;
 }
 .form-text{
+  margin-top: 10%;
+  margin-bottom: 10%;
+  width: 100%;
   border-top: 0px;
   border-left: 0px;
   border-right: 0px;
+}
+textarea:focus, input:focus, select:focus{
+  outline: none;
 }

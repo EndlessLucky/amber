@@ -12,14 +12,14 @@
       <div class="col-md-3 navigator-col">
         <img src="../../assets/img/Isil.svg"/>
       </div>
-      <div class="col-md-3 navigator-col navigator-margin">
+      <div class="col-md-3 navigator-col">
         <img src="../../assets/img/Ferreyros.svg"/>
       </div>
-      <div class="col-md-3 navigator-col navigator-margin">
+      <div class="col-md-3 navigator-col">
         <img src="../../assets/img/Utec.svg"/>
       </div>
     </div>
-    <div class="row navigator-row">
+    <div class="row navigator-row-end">
       <div class="col-md-3">
       </div>
       <div class="col-md-3 navigator-col">

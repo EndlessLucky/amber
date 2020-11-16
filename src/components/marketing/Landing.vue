@@ -4,7 +4,7 @@
       <p class="landing-content">Body - Lorem ipsum dolor sit amet, consetetur sadipscing lorem ipsum.</p>
     </div>
     <div class="marketing-landing-title-container">
-      <h1 class="landing-title">Marketing 2.0 para navegar en el mar</h1>
+      <h1 class="landing-title">Marketing 2.0<br> para navegar<br> en el mar</h1>
     </div>
   </div>
 </template>

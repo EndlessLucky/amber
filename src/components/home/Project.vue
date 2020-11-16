@@ -7,14 +7,14 @@
       </div>
       <div class="row">
         <div class="col-md-6 DNA-card">
-          <router-link v-bind:to="{ name: 'Marketing' }">
-          <h1 class="project-title-one" @mouseover="firstOver">Latin Surf</h1>
-          </router-link>
+          <!-- <router-link v-bind:to="{ name: 'Marketing' }"> -->
+          <h1 class="project-title-one" v-on:click="firstOver">Latin Surf</h1>
+          <!-- </router-link> -->
           <transition name="fade" mode="out-in">
             <div class="row" v-if="isSelect == 1">
               <div class="project-num-container">
                 <p class="project-num">01</p>
-                <span class="project-line-one"></span>
+                <p class="project-line-one"></p>
               </div>
               <div class="project-content-container">
                 <p class="project-content">
@@ -25,12 +25,12 @@
               </div>
             </div>
           </transition>
-          <h1 class="project-title-two" @mouseover="secondOver">Lennon</h1>
+          <h1 class="project-title-two" v-on:click="secondOver">Lennon</h1>
           <transition name="fade" mode="out-in">
             <div class="row" v-if="isSelect == 2">
               <div class="project-num-container">
                 <p class="project-num">02</p>
-                <span class="project-line-two"></span>
+                <p class="project-line-two"></p>
               </div>
               <div class="project-content-container">
                 <p class="project-content">
@@ -41,12 +41,12 @@
               </div>
             </div>
           </transition>
-          <h1 class="project-title-three" @mouseover="thirdOver">Superliga<br> CMD</h1>
+          <h1 class="project-title-three" v-on:click="thirdOver">Superliga<br> CMD</h1>
           <transition name="fade" mode="out-in">
             <div class="row" v-if="isSelect == 3">
               <div class="project-num-container">
                 <p class="project-num">03</p>
-                <span class="project-line-three"></span>
+                <p class="project-line-three"></p>
               </div>
               <div class="project-content-container">
                 <p class="project-content">

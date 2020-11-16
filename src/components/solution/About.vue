@@ -2,7 +2,7 @@
   <div class="about-container">
     <div class="row">
       <div class="col-md-6">
-        <h1 class="solution-about-title">Ahora es el momento de acelerar sus migraciones a la nube</h1>
+        <h1 class="solution-about-title">Ahora es el<br> momento de<br> acelerar sus<br> migraciones<br> a la nube</h1>
       </div>
       <div class="col-md-6">
         <p class="about-content">

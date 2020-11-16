@@ -26,7 +26,8 @@ export default {
   },
   data () {
     return {
-      scrollPosition: null
+      scrollPosition: null,
+      Title: 'Project'
     }
   },
   methods: {

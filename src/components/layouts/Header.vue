@@ -11,36 +11,22 @@
 
     <b-collapse id="nav-collapse" is-nav :class="{change_color: scrollPosition > 50}">
       <b-navbar-nav id="nav-item" class="ml-auto">
-        <b-nav-item href="" @mouseover="solutionOver" @mouseleave="solutionLeave">
-          <transition name="fade" mode="out-in">
-            <span class="nav-slash" v-if="solutionSlash">/</span>
-          </transition>
+        <b-nav-item  href="" @mouseover="solutionOver" @mouseleave="solutionLeave">
           <router-link v-bind:to="{ name: 'Solution' }">Soluciones</router-link>
         </b-nav-item>
         <b-nav-item href="#" @mouseover="piratasOver" @mouseleave="piratasLeave">
-          <transition name="fade" mode="out-in">
-            <span class="nav-slash" v-if="piratasSlash">/</span>
-          </transition>
           <router-link v-bind:to="{ name: 'Piratas' }">Piratas</router-link>
         </b-nav-item>
         <b-nav-item href="#" @mouseover="talentOver" @mouseleave="talentLeave">
-          <transition name="fade" mode="out-in">
-            <span class="nav-slash" v-if="talentSlash">/</span>
-          </transition>
           <router-link v-bind:to="{ name: 'Talent' }">Talento</router-link>
         </b-nav-item>
         <b-nav-item href="#" @mouseover="projectOver" @mouseleave="projectLeave">
-          <transition name="fade" mode="out-in">
-            <span class="nav-slash" v-if="projectSlash">/</span>
-          </transition>
           <router-link v-bind:to="{ name: 'Project' }">Proyectos</router-link>
         </b-nav-item>
         <b-nav-item href="#" @mouseover="connectOver" @mouseleave="connectLeave">
-          <transition name="fade" mode="out-in">
-            <span class="nav-slash" v-if="connectSlash">/</span>
-          </transition>
           <router-link v-bind:to="{ name: 'Contact' }">Conecta</router-link>
         </b-nav-item>
+        <div id="header-active-section-flag" v-bind:style="{left: activeLeft, backgroundColor: colorLeft}"></div>
       </b-navbar-nav>
       <div class="footer-2" v-if="collapse == true">
         <div class="container">
@@ -67,18 +53,18 @@
 <script>
 export default {
   name: 'Header',
+  props: ['title'],
   data () {
     return {
       collapseColor: 'transparent!important',
       collapse: false,
       isblackLogo: false,
       linkColor: 'white!important',
-      solutionSlash: false,
-      piratasSlash: false,
-      talentSlash: false,
-      projectSlash: false,
-      connectSlash: false,
-      scrollPosition: null
+      scrollPosition: null,
+      activeLeft: '0px',
+      initLeft: '0px',
+      colorLeft: 'black',
+      initColorLeft: 'black'
     }
   },
   methods: {
@@ -91,36 +77,54 @@ export default {
       }
     },
     solutionOver: function () {
-      this.solutionSlash = true
+      this.activeLeft = '45px'
+      this.colorLeft = '#FD6B21'
     },
     solutionLeave: function () {
-      this.solutionSlash = false
+      this.activeLeft = this.initLeft
+      this.colorLeft = this.initColorLeft
     },
     piratasOver: function () {
-      this.piratasSlash = true
+      this.activeLeft = '175px'
+      this.colorLeft = '#FD6B21'
     },
     piratasLeave: function () {
-      this.piratasSlash = false
+      this.activeLeft = this.initLeft
+      this.colorLeft = this.initColorLeft
     },
     talentOver: function () {
-      this.talentSlash = true
+      this.activeLeft = '305px'
+      this.colorLeft = '#FD6B21'
     },
     talentLeave: function () {
-      this.talentSlash = false
+      this.activeLeft = this.initLeft
+      this.colorLeft = this.initColorLeft
     },
     projectOver: function () {
-      this.projectSlash = true
+      this.activeLeft = '430px'
+      this.colorLeft = '#FD6B21'
     },
     projectLeave: function () {
-      this.projectSlash = false
+      this.activeLeft = this.initLeft
+      this.colorLeft = this.initColorLeft
     },
     connectOver: function () {
-      this.connectSlash = true
+      this.activeLeft = '565px'
+      this.colorLeft = '#FD6B21'
     },
     connectLeave: function () {
-      this.connectSlash = false
+      this.activeLeft = this.initLeft
+      this.colorLeft = this.initColorLeft
     },
     updateScroll () {
+      switch (this.$route.name) {
+        case 'Solution':
+          this.solutionLeave()
+          break
+        case 'Project':
+          this.projectLeave()
+          break
+      }
       this.scrollPosition = window.scrollY
     }
   },
@@ -130,8 +134,32 @@ export default {
     } else {
       this.isblackLogo = true
     }
-    if (this.$route.name === 'Piratas') {
-      this.linkColor = '#131b27!important'
+
+    switch (this.$route.name) {
+      case 'Home':
+        this.initLeft = '0px'
+        this.initColorLeft = 'black'
+        break
+      case 'Solution':
+        this.initLeft = '45px'
+        this.initColorLeft = '#FD6B21'
+        break
+      case 'Piratas':
+        this.initLeft = '175px'
+        this.initColorLeft = '#FD6B21'
+        break
+      case 'Talent':
+        this.initLeft = '305px'
+        this.initColorLeft = '#FD6B21'
+        break
+      case 'Project':
+        this.initLeft = '430px'
+        this.initColorLeft = '#FD6B21'
+        break
+      case 'Contact':
+        this.initLeft = '565px'
+        this.initColorLeft = '#FD6B21'
+        break
     }
     window.addEventListener('scroll', this.updateScroll)
   }
@@ -151,7 +179,7 @@ export default {
   }
   .change_color {
     background-color: #131b27!important;
-    height: 100px;
+    height: 50px;
   }
   .fade-enter-active, .fade-leave-active {
     transition: opacity .5s;

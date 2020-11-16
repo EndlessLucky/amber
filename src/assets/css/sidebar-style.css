@@ -1,14 +1,40 @@
-.b-sidebar{
+@media only screen and (min-width: 765px) {
+  #sidebar-right{
+    width: 25%;
+  }
+}
+@media only screen and (max-width: 765px) {
+  #sidebar-right{
+    width: 100%;
+  }
+}
+#sidebar-right{
   background-color: #131b27!important;
+}
+.b-sidebar-header{
+  justify-content: flex-end;
+}
+.b-sidebar-header .close {
+  margin-right: 0px!important;
 }
 .form-container{
   padding-left: 10%;
   padding-right: 10%;
 }
 .custom-input{
+  width: 100%;
   background-color: #131b27!important;
   border: 1px solid white;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+}
+.custom-option{
+  width: 100%!important;
+  background-color: #131b27!important;
   color: white;
+  border: 1px solid white;
+  border-bottom: 1px!important;
   border-top: 0px;
   border-left: 0px;
   border-right: 0px;
@@ -19,3 +45,8 @@
 .input-row{
   margin-top: 30px;
 }
+.option-row{
+  border-bottom: 1px solid white;
+  padding-bottom: 10px;
+}
+

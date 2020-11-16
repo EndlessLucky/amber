@@ -1,7 +1,7 @@
 <template>
   <div>
-    <Header v-if="scrollPosition < 50"/>
-    <HeaderBlack v-else/>
+    <Header :title="Title" v-if="scrollPosition < 50"/>
+    <HeaderBlack :title="Title" v-else/>
     <Landing/>
     <About/>
     <DNA/>
@@ -39,7 +39,7 @@ export default {
   data () {
     return {
       scrollPosition: null,
-      contactTitle: 'Cuéntanos el reto y lo resolvemos'
+      Title: 'Solution'
     }
   },
   methods: {
