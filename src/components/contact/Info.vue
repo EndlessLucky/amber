@@ -11,45 +11,63 @@
         <p class="contact-info-content">hola@amber.pe</p>
       </div>
     </div>
-    <div class="google-map" ref="googleMap"></div>
-    <template v-if="Boolean(this.google) && Boolean(this.map)">
-      <slot
-        :google="google"
-        :map="map"
-      />
-    </template>
+    <GoogleMapLoader :mapConfig="mapConfig" apiKey="AIzaSyCf09qlYT8X4AIpQ92I8LhW2v12SyAhB0M"/>
   </div>
 </div>
 </template>
 
 <script>
-import GoogleMapsApiLoader from 'google-maps-api-loader'
+import GoogleMapLoader from '../googlemap/GoogleMapLoader'
+import { mapSettings } from '../../constants/mapSettings'
 
 export default {
   name: 'Info',
-  props: {
-    mapConfig: Object,
-    apiKey: String
+  components: {
+    GoogleMapLoader
   },
   data () {
     return {
-      google: null,
-      map: null
+      markers: [
+        {
+          id: 'a',
+          position: { lat: 3, lng: 101 }
+        },
+        {
+          id: 'b',
+          position: { lat: 5, lng: 99 }
+        },
+        {
+          id: 'c',
+          position: { lat: 6, lng: 97 }
+        }
+      ],
+      lines: [
+        {
+          id: '1',
+          path: [
+            { lat: 3, lng: 101 },
+            { lat: 5, lng: 99 }
+          ]
+        },
+        {
+          id: '2',
+          path: [
+            { lat: 5, lng: 99 },
+            { lat: 6, lng: 97 }
+          ]
+        }
+      ]
     }
   },
-  async mounted () {
-    const googleMapApi = await GoogleMapsApiLoader({
-      apiKey: this.apiKey
-    })
-    this.google = googleMapApi
-    this.initializeMap()
-  },
-  methods: {
-    initializeMap () {
-      const mapContainer = this.$refs.googleMap
-      this.map = new this.google.maps.Map(
-        mapContainer, this.mapConfig
-      )
+  computed: {
+    mapConfig () {
+      return {
+        ...mapSettings,
+        center: this.mapCenter
+      }
+    },
+    mapCenter () {
+      return this.markers[1].position
     }
   }
 }
