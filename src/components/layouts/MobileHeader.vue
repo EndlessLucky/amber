@@ -1,28 +1,29 @@
 <template>
-  <b-navbar class="nav-bar" toggleable="lg" type="dark">
+  <b-navbar class="nav-bar" toggleable="lg" type="dark" v-bind:style="{backgroundColor: collapseColor}" :class="{change_color: scrollPosition > 50}">
     <b-navbar-brand href="">
       <router-link v-bind:to="{ name: 'Home' }">
-        <img class="logo-img-black" src="../../assets/img/logo-black.svg">
+        <img class="logo-img-black" src="../../assets/img/logo-black.svg" v-if="isblackLogo && scrollPosition < 50">
+        <img class="logo-img" src="../../assets/img/logo-white.svg" v-else>
       </router-link>
     </b-navbar-brand>
 
     <b-navbar-toggle target="nav-collapse" v-on:click="collapseNav" ></b-navbar-toggle>
 
-    <b-collapse id="nav-collapse" is-nav :class="{change_color: scrollPosition > 50}">
+    <b-collapse id="nav-collapse" is-nav >
       <b-navbar-nav id="nav-item" class="ml-auto">
-        <b-nav-item href="" @mouseover="solutionOver" @mouseleave="solutionLeave">
+        <b-nav-item  href="">
           <router-link v-bind:to="{ name: 'Solution' }">Soluciones</router-link>
         </b-nav-item>
-        <b-nav-item href="#" @mouseover="piratasOver" @mouseleave="piratasLeave">
+        <b-nav-item href="#">
           <router-link v-bind:to="{ name: 'Piratas' }">Piratas</router-link>
         </b-nav-item>
-        <b-nav-item href="#" @mouseover="talentOver" @mouseleave="talentLeave">
+        <b-nav-item href="#">
           <router-link v-bind:to="{ name: 'Talent' }">Talento</router-link>
         </b-nav-item>
-        <b-nav-item href="#" @mouseover="projectOver" @mouseleave="projectLeave">
+        <b-nav-item href="#">
           <router-link v-bind:to="{ name: 'Project' }">Proyectos</router-link>
         </b-nav-item>
-        <b-nav-item href="#" @mouseover="connectOver" @mouseleave="connectLeave">
+        <b-nav-item href="#">
           <router-link v-bind:to="{ name: 'Contact' }">Conecta</router-link>
         </b-nav-item>
         <div id="header-active-section-flag" v-bind:style="{left: activeLeft, backgroundColor: colorLeft}"></div>
@@ -53,18 +54,18 @@
 import { isMobile } from 'mobile-device-detect'
 
 export default {
-  name: 'HeaderBlack',
+  name: 'MobileHeader',
   data () {
     return {
-      collapseColor: 'transparent!important',
+      collapseColor: 'transparent',
       collapse: false,
-      isblackLogo: true,
+      isblackLogo: false,
       linkColor: 'white!important',
       scrollPosition: null,
       activeLeft: '0px',
       initLeft: '0px',
-      colorLeft: 'white',
-      initColorLeft: 'white',
+      colorLeft: 'black',
+      initColorLeft: 'black',
       isMobile: isMobile
     }
   },
@@ -74,87 +75,18 @@ export default {
       if (this.collapse) {
         this.collapseColor = '#131b27!important'
       } else {
-        this.collapseColor = 'transparent!important'
+        this.collapseColor = 'transparent'
       }
-    },
-    solutionOver: function () {
-      this.activeLeft = '45px'
-      this.colorLeft = '#FD6B21'
-    },
-    solutionLeave: function () {
-      this.activeLeft = this.initLeft
-      this.colorLeft = this.initColorLeft
-    },
-    piratasOver: function () {
-      this.activeLeft = '175px'
-      this.colorLeft = '#FD6B21'
-    },
-    piratasLeave: function () {
-      this.activeLeft = this.initLeft
-      this.colorLeft = this.initColorLeft
-    },
-    talentOver: function () {
-      this.activeLeft = '305px'
-      this.colorLeft = '#FD6B21'
-    },
-    talentLeave: function () {
-      this.activeLeft = this.initLeft
-      this.colorLeft = this.initColorLeft
-    },
-    projectOver: function () {
-      this.activeLeft = '430px'
-      this.colorLeft = '#FD6B21'
-    },
-    projectLeave: function () {
-      this.activeLeft = this.initLeft
-      this.colorLeft = this.initColorLeft
-    },
-    connectOver: function () {
-      this.activeLeft = '565px'
-      this.colorLeft = '#FD6B21'
-    },
-    connectLeave: function () {
-      this.activeLeft = this.initLeft
-      this.colorLeft = this.initColorLeft
     },
     updateScroll () {
-      switch (this.$route.name) {
-        case 'Solution':
-          this.solutionLeave()
-          break
-        case 'Project':
-          this.projectLeave()
-          break
-      }
       this.scrollPosition = window.scrollY
     }
   },
   mounted () {
-    switch (this.$route.name) {
-      case 'Home':
-        this.initLeft = '0px'
-        this.initColorLeft = 'white'
-        break
-      case 'Solution':
-        this.initLeft = '45px'
-        this.initColorLeft = '#FD6B21'
-        break
-      case 'Piratas':
-        this.initLeft = '175px'
-        this.initColorLeft = '#FD6B21'
-        break
-      case 'Talent':
-        this.initLeft = '305px'
-        this.initColorLeft = '#FD6B21'
-        break
-      case 'Project':
-        this.initLeft = '430px'
-        this.initColorLeft = '#FD6B21'
-        break
-      case 'Contact':
-        this.initLeft = '565px'
-        this.initColorLeft = '#FD6B21'
-        break
+    if (this.$route.name === 'Home' || this.$route.name === 'Project' || this.$route.name === 'Marketing') {
+      this.isblackLogo = false
+    } else {
+      this.isblackLogo = true
     }
     window.addEventListener('scroll', this.updateScroll)
   }
@@ -165,16 +97,31 @@ export default {
     width: 110px;
     padding-left: 0px;
     padding-right: 0px;
-    color: black!important;
+    color: white!important;
     margin-right: 20px;
   }
   .nav-link a{
-    color: black!important;
+    color: white!important;
     text-decoration: none!important;
   }
+  .nav-bar{
+    background-color: transparent!important;
+    top:0px!important;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  #nav-collapse{
+    margin-top: 60px;
+  }
+  .nav-item{
+    margin-bottom: 20px;
+  }
+  .nav-link{
+    margin: auto!important;
+  }
   .change_color {
-    background-color: white!important;
-    height: 60px;
+    background-color: #131b27!important;
   }
   .fade-enter-active, .fade-leave-active {
     transition: opacity .5s;

@@ -1,7 +1,12 @@
 <template>
   <div>
-    <Header :title="Title" v-if="scrollPosition < 50"/>
-    <HeaderBlack :title="Title" v-else/>
+    <div class="mobile-header">
+      <MobileHeader/>
+    </div>
+    <div class="desktop-header">
+      <Header v-if="scrollPosition < 50"/>
+      <HeaderBlack v-else/>
+    </div>
     <Landing/>
     <About/>
     <DNA/>
@@ -13,8 +18,11 @@
 </template>
 
 <script>
+import { isMobile } from 'mobile-device-detect'
+
 import Header from '../layouts/Header'
 import HeaderBlack from '../layouts/HeaderBlack'
+import MobileHeader from '../layouts/MobileHeader'
 import Landing from '../solution/Landing'
 import About from '../solution/About'
 import DNA from '../solution/DNA'
@@ -28,6 +36,7 @@ export default {
   components: {
     Header,
     HeaderBlack,
+    MobileHeader,
     Landing,
     About,
     DNA,
@@ -38,6 +47,7 @@ export default {
   },
   data () {
     return {
+      isMobile: isMobile,
       scrollPosition: null,
       Title: 'Solution'
     }

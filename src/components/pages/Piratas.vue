@@ -1,6 +1,11 @@
 <template>
   <div>
-    <HeaderBlack/>
+    <div class="mobile-header">
+      <MobileHeader/>
+    </div>
+    <div class="desktop-header">
+      <HeaderBlack/>
+    </div>
     <Landing/>
     <About/>
     <DNA/>
@@ -12,6 +17,7 @@
 
 <script>
 import HeaderBlack from '../layouts/HeaderBlack'
+import MobileHeader from '../layouts/MobileHeader'
 import Landing from '../piratas/Landing'
 import About from '../piratas/About'
 import DNA from '../solution/DNA'
@@ -23,6 +29,7 @@ export default {
   name: 'Piratas',
   components: {
     HeaderBlack,
+    MobileHeader,
     Landing,
     About,
     DNA,

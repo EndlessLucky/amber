@@ -1,6 +1,11 @@
 <template>
   <div>
-    <HeaderBlack/>
+    <div class="mobile-header">
+      <MobileHeader/>
+    </div>
+    <div class="desktop-header">
+      <HeaderBlack/>
+    </div>
     <Landing/>
     <About/>
     <Contact/>
@@ -10,6 +15,7 @@
 
 <script>
 import HeaderBlack from '../layouts/HeaderBlack'
+import MobileHeader from '../layouts/MobileHeader'
 import Landing from '../cloud/Landing'
 import About from '../cloud/About'
 import Contact from '../solution/Contact'
@@ -19,6 +25,7 @@ export default {
   name: 'Cloud',
   components: {
     HeaderBlack,
+    MobileHeader,
     Landing,
     About,
     Contact,

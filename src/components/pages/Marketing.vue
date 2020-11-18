@@ -1,7 +1,12 @@
 <template>
   <div>
-    <Header v-if="scrollPosition < 50"/>
-    <HeaderBlack v-else/>
+    <div class="mobile-header">
+      <MobileHeader/>
+    </div>
+    <div class="desktop-header">
+      <Header v-if="scrollPosition < 50"/>
+      <HeaderBlack v-else/>
+    </div>
     <Landing/>
     <About/>
     <Contact/>
@@ -12,6 +17,7 @@
 <script>
 import Header from '../layouts/Header'
 import HeaderBlack from '../layouts/HeaderBlack'
+import MobileHeader from '../layouts/MobileHeader'
 import Landing from '../marketing/Landing'
 import About from '../marketing/About'
 import Contact from '../solution/Contact'
@@ -22,6 +28,7 @@ export default {
   components: {
     Header,
     HeaderBlack,
+    MobileHeader,
     Landing,
     About,
     Contact,

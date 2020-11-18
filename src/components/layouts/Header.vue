@@ -1,5 +1,5 @@
 <template>
-  <b-navbar class="nav-bar" toggleable="lg" type="dark">
+  <b-navbar class="nav-bar" toggleable="lg" type="dark" v-bind:style="{backgroundColor: collapseColor}">
     <b-navbar-brand href="">
       <router-link v-bind:to="{ name: 'Home' }">
         <img class="logo-img" src="../../assets/img/logo-white.svg" v-if="!isblackLogo">
@@ -51,9 +51,10 @@
 </template>
 
 <script>
+import { isMobile } from 'mobile-device-detect'
+
 export default {
   name: 'Header',
-  props: ['title'],
   data () {
     return {
       collapseColor: 'transparent!important',
@@ -64,7 +65,8 @@ export default {
       activeLeft: '0px',
       initLeft: '0px',
       colorLeft: 'black',
-      initColorLeft: 'black'
+      initColorLeft: 'black',
+      isMobile: isMobile
     }
   },
   methods: {
@@ -129,10 +131,10 @@ export default {
     }
   },
   mounted () {
-    if (this.$route.name === 'Home' || this.$route.name === 'Project' || this.$route.name === 'Marketing') {
-      this.isblackLogo = false
-    } else {
+    if (this.$route.name === 'Solution') {
       this.isblackLogo = true
+    } else {
+      this.isblackLogo = false
     }
 
     switch (this.$route.name) {

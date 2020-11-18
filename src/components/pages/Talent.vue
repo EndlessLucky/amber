@@ -1,6 +1,11 @@
 <template>
   <div>
-    <HeaderBlack/>
+    <div class="mobile-header">
+      <MobileHeader/>
+    </div>
+    <div class="desktop-header">
+      <HeaderBlack/>
+    </div>
     <About/>
     <Architect/>
     <CV/>
@@ -10,6 +15,7 @@
 
 <script>
 import HeaderBlack from '../layouts/HeaderBlack'
+import MobileHeader from '../layouts/MobileHeader'
 import About from '../talent/About'
 import Architect from '../talent/Architect'
 import CV from '../talent/CV'
@@ -19,6 +25,7 @@ export default {
   name: 'Talent',
   components: {
     HeaderBlack,
+    MobileHeader,
     About,
     Architect,
     CV,
