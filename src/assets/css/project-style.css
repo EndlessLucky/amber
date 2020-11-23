@@ -8,10 +8,10 @@
   .project-container{
     padding:70% 10% 10% 10%;
   }
-  .project-page-one{
+  /* .project-page-one{
     font-size: 36px!important;
-  }
-  .project-page-line-one{
+  } */
+  /* .project-page-line-one{
     top: -50px!important;
     left: -60px!important;
   }
@@ -22,19 +22,19 @@
   .project-page-line-three{
     top: 20px!important;
     left: -60px!important;
-  }
+  } */
 }
 .project-page{
   height: 100vh;
 }
 .project-page-one{
-  font-size: 66px;
+  /* font-size: 66px; */
   font-weight: bold;
   color: white;
   cursor: pointer;
 }
 .project-page-two{
-  font-size: 22px;
+  /* font-size: 22px; */
   font-weight: bold;
   color: white;
   cursor: pointer;

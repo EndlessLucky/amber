@@ -4,8 +4,7 @@
       <MobileHeader/>
     </div>
     <div class="desktop-header">
-      <Header v-if="scrollPosition < 50"/>
-      <HeaderBlack v-else/>
+      <HeaderBlack/>
     </div>
     <Landing/>
     <About/>

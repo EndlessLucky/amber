@@ -11,7 +11,9 @@
         <p class="contact-info-content">hola@amber.pe</p>
       </div>
     </div>
-    <GoogleMapLoader :mapConfig="mapConfig" apiKey="AIzaSyCf09qlYT8X4AIpQ92I8LhW2v12SyAhB0M"/>
+  </div>
+  <div class="contact-map-container">
+    <GoogleMapLoader :mapConfig="mapConfig" apiKey=""/>
   </div>
 </div>
 </template>
@@ -63,7 +65,7 @@ export default {
     mapConfig () {
       return {
         ...mapSettings,
-        center: this.mapCenter
+        center: { lat: -10, lng: -80 }
       }
     },
     mapCenter () {

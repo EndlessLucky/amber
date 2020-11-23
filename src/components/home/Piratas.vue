@@ -14,7 +14,7 @@
           Phyton - Scala - Jenkins - Docker
         </p>
       </div>
-      <div class="col-md-6">
+      <div class="col-md-6 piratas-right">
         <h1 class="piratas-title-one">Diseño</h1>
         <h1 class="piratas-title-two">UX designer</h1>
         <p class="piratas-content">
@@ -25,9 +25,9 @@
     <div class="row piratas-footer">
       <div class="col-md-6 about-footer">
         <router-link v-bind:to="{ name: 'Talent' }">
-          <p class="about-link">Reclutamos</p>
+          <a class="about-link">Reclutamos</a>
         </router-link>
-        <div class="about-line-one"></div>
+        <!-- <div class="about-line-one"></div> -->
         <div class="about-line-two"></div>
       </div>
     </div>

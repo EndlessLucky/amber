@@ -1,31 +1,45 @@
 <template>
-  <b-navbar class="nav-bar" toggleable="lg" type="dark" v-bind:style="{backgroundColor: collapseColor}" :class="{change_color: scrollPosition > 50}">
+  <b-navbar class="nav-bar" toggleable="lg" type="dark" v-bind:style="{backgroundColor: collapseColor, height: collapseHeight}" :class="{change_color: scrollPosition > 50}">
     <b-navbar-brand href="">
       <router-link v-bind:to="{ name: 'Home' }">
-        <img class="logo-img-black" src="../../assets/img/logo-black.svg" v-if="isblackLogo && scrollPosition < 50">
+        <img class="logo-img-black" src="../../assets/img/logo-black.svg" v-if="isblackLogo && scrollPosition < 50 && !this.collapse">
         <img class="logo-img" src="../../assets/img/logo-white.svg" v-else>
       </router-link>
     </b-navbar-brand>
 
-    <b-navbar-toggle target="nav-collapse" v-on:click="collapseNav" ></b-navbar-toggle>
+    <b-navbar-toggle target="nav-collapse" v-on:click="collapseNav">
+      <template #default="{ expanded }">
+        <b-button v-if="expanded"  class="sidebar-close" size="sm">X</b-button>
+        <button v-else type="button" aria-label="Toggle navigation" class="navbar-toggler collapsed"
+          aria-expanded="false" aria-controls="nav-collapse" style="overflow-anchor: none; outline: none;">
+          <span class="navbar-toggler-icon" v-if="isWhiteToggle"></span>
+          <span class="navbar-toggler-icon-orange" v-else></span>
+        </button>
+      </template>
+    </b-navbar-toggle>
 
     <b-collapse id="nav-collapse" is-nav >
       <b-navbar-nav id="nav-item" class="ml-auto">
-        <b-nav-item  href="">
-          <router-link v-bind:to="{ name: 'Solution' }">Soluciones</router-link>
+        <b-nav-item v-if="routeName != 'Solution'">
+          <router-link v-bind:to="{ name: 'Solution' }" >Soluciones</router-link>
         </b-nav-item>
-        <b-nav-item href="#">
+        <p class="nav-text" v-else>Soluciones</p>
+        <b-nav-item href="#" v-if="routeName != 'Piratas'">
           <router-link v-bind:to="{ name: 'Piratas' }">Piratas</router-link>
         </b-nav-item>
-        <b-nav-item href="#">
+        <p class="nav-text" v-else>Piratas</p>
+        <b-nav-item href="#" v-if="routeName != 'Talent'">
           <router-link v-bind:to="{ name: 'Talent' }">Talento</router-link>
         </b-nav-item>
-        <b-nav-item href="#">
+        <p class="nav-text" v-else>Talento</p>
+        <b-nav-item href="#" v-if="routeName != 'Project'">
           <router-link v-bind:to="{ name: 'Project' }">Proyectos</router-link>
         </b-nav-item>
-        <b-nav-item href="#">
+        <p class="nav-text" v-else>Proyectos</p>
+        <b-nav-item href="#" v-if="routeName != 'Contact'">
           <router-link v-bind:to="{ name: 'Contact' }">Conecta</router-link>
         </b-nav-item>
+        <p class="nav-text" v-else>Conecta</p>
         <div id="header-active-section-flag" v-bind:style="{left: activeLeft, backgroundColor: colorLeft}"></div>
       </b-navbar-nav>
       <div class="footer-2" v-if="collapse == true">
@@ -66,7 +80,10 @@ export default {
       initLeft: '0px',
       colorLeft: 'black',
       initColorLeft: 'black',
-      isMobile: isMobile
+      isMobile: isMobile,
+      isWhiteToggle: true,
+      collapseHeight: '80px',
+      routeName: 'Home'
     }
   },
   methods: {
@@ -74,8 +91,10 @@ export default {
       this.collapse = !this.collapse
       if (this.collapse) {
         this.collapseColor = '#131b27!important'
+        this.collapseHeight = '100%'
       } else {
         this.collapseColor = 'transparent'
+        this.collapseHeight = '80px'
       }
     },
     updateScroll () {
@@ -83,16 +102,31 @@ export default {
     }
   },
   mounted () {
+    this.routeName = this.$route.name
+
     if (this.$route.name === 'Home' || this.$route.name === 'Project' || this.$route.name === 'Marketing') {
       this.isblackLogo = false
     } else {
       this.isblackLogo = true
+    }
+    if (this.$route.name === 'Home' || this.$route.name === 'Solution' || this.$route.name === 'Piratas' || this.$route.name === 'Project' || this.$route.name === 'Marketing') {
+      this.isWhiteToggle = true
+    } else {
+      this.isWhiteToggle = false
     }
     window.addEventListener('scroll', this.updateScroll)
   }
 }
 </script>
 <style scoped>
+  .navbar-toggler-icon{
+    width: 22px;
+    height: 9px;
+  }
+  .navbar-toggler-icon-orange{
+    width: 22px;
+    height: 9px;
+  }
   .nav-link{
     width: 110px;
     padding-left: 0px;
@@ -104,11 +138,14 @@ export default {
     color: white!important;
     text-decoration: none!important;
   }
+  .nav-text{
+    height: 46px;
+    color: white!important;
+  }
   .nav-bar{
     background-color: transparent!important;
     top:0px!important;
     text-align: center;
-    font-weight: bold;
     font-size: 20px;
   }
   #nav-collapse{

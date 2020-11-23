@@ -15,9 +15,9 @@
       </div>
       <div class="col-md-6 about-footer">
         <router-link v-bind:to="{ name: 'Piratas' }">
-          <p class="about-link">Conoce más</p>
+          <a class="about-link">Conoce más</a>
         </router-link>
-        <div class="about-line-one"></div>
+        <!-- <div class="about-line-one"></div> -->
         <div class="about-line-two"></div>
       </div>
     </div>
@@ -32,5 +32,23 @@ export default {
 </script>
 
 <style scoped>
-
+  /* .about-link{
+    position: relative;
+  }
+  .about-link:before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    right: 0;
+    background-color: #00adf0;
+    visibility: visible;
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+  }
+  .about-link:hover:before{
+    visibility: visible;
+    width: 0%;
+  } */
 </style>

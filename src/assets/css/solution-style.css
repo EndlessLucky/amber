@@ -161,7 +161,7 @@
 /* Navigation section */
 @media only screen and (max-width: 765px) {
   .navigator-col{
-    width: 50%;
+    width: 50%!important;
   }
 }
 .solution-navigation-title{

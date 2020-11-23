@@ -49,7 +49,7 @@ const LINE_PATH_CONFIG = {
 }
 
 const mapSettings = {
-  clickableIcons: false,
+  clickableIcons: true,
   streetViewControl: false,
   panControlOptions: false,
   gestureHandling: 'cooperative',
@@ -60,7 +60,7 @@ const mapSettings = {
   },
   zoom: 5,
   minZoom: 2,
-  maxZoom: 8,
+  maxZoom: 20,
   styles: [
     {
       featureType: 'landscape',

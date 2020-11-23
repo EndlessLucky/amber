@@ -6,7 +6,7 @@
         <h1 class="contact-form-title">Cuéntanos en que podemos ayudarte</h1>
       </div>
     </div>
-    <div class="row contact-input-row">
+    <div class="row">
       <div class="col-md-6">
         <input class="form-text" type="text" placeholder="Nombre y apellido"/>
       </div>
@@ -14,7 +14,7 @@
         <input class="form-text" type="text" placeholder="Correo"/>
       </div>
     </div>
-    <div class="row contact-input-row">
+    <div class="row">
       <div class="col-md-6">
         <input class="form-text" type="text" placeholder="Número"/>
       </div>
@@ -22,9 +22,17 @@
         <input class="form-text" type="text" placeholder="Tu empresa"/>
       </div>
     </div>
-    <div class="row contact-input-row">
-      <div class="col-md-6">
+    <div class="row">
+      <div class="col-md-12">
         <input class="form-text" type="text" placeholder="Cómo te podemos ayudar"/>
+      </div>
+    </div>
+    <div class="row contact-input-row">
+      <div class="col-md-12 accept-col">
+        <input type="checkbox" name="custom_field" id="contact-form-check">
+        <label class="contact-check-text" for="contact-form-check">
+          Acepto los tratamientos de datos indicados en la política de privacidad*
+        </label>
       </div>
     </div>
     <div class="row contact-button-row">
