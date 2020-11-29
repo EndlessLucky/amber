@@ -36,11 +36,11 @@
                 <p class="col-md-12 font-size-style-25 pl-0">hola@amber.pe</p>
               </div>
               <div class="col-md-6 text-left">
-                <a><i class="fab fa-instagram text-white awaer mr-4"></i></a>
-                <a><i class="fab fa-linkedin-in text-white awaer mr-4"></i></a>
-                <a><i class="fab fa-facebook-square text-white awaer mr-4"></i></a>
-                <a><i class="fab fa-twitter-square text-white awaer mr-4"></i></a>
-                <a><i class="fab fa-youtube awaer text-white"></i></a>
+                <a><i class="fa fa-linkedin text-white awaer mr-4"></i></a>
+                <a><i class="fa fa-linkedin text-white awaer mr-4"></i></a>
+                <a><i class="fa fa-facebook-square text-white awaer mr-4"></i></a>
+                <a><i class="fa fa-twitter-square text-white awaer mr-4"></i></a>
+                <a><i class="fa fa-youtube awaer text-white"></i></a>
               </div>
             </div>
         </div>
@@ -69,6 +69,9 @@ export default {
     }
   },
   methods: {
+    scrollToTop: function () {
+      window.scrollTo(0, 0)
+    },
     collapseNav: function (event) {
       this.collapse = !this.collapse
       if (this.collapse) {

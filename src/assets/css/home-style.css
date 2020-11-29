@@ -23,7 +23,6 @@ body{
     .footer-2{
         display: none;
     }  
-
     #header-active-section-flag{
         display: block;
         position: absolute;
@@ -47,7 +46,11 @@ body{
     .nav-bar{
         padding-left: 30px!important;
         padding-right: 30px!important;
-        padding-top: 20px!important;
+        padding-top: 10px!important;
+        background-color: transparent!important;
+        top:0px!important;
+        text-align: center;
+        font-size: 20px;
     }
     .desktop-header{
         display: none;
@@ -102,16 +105,25 @@ body{
 /* Landing section */
 @media only screen and (min-width: 765px) {
     .landing-title-container{
-        padding: 15% 0px 0px 40%;
+        padding: 15% 0px 0px 28%;
     }
     .landing-content-container{
-        padding: 0px 0px 0px 42%;
+        padding: 0px 0px 0px 37%;
     }
     .landing-title{
         font-size: 66px;        
     }
+    .ml2{
+        color: white;
+        font-size: 150px;        
+    }
     .landing-content{
         font-size: 14px;
+        line-height: 2.5;
+    }
+    .ml13{
+        color: white;
+        font-size: 25px;
         line-height: 2.5;
     }
     .line1 {
@@ -142,12 +154,24 @@ body{
     }
 }
 @media only screen and (max-width: 765px) {
+
     .landing-title-container{
-        padding: 125px 0px 0px 39.5px;
+        padding: 80% 0px 0px 80px;
     }
     .landing-content-container{
-        padding: 0px 0px 0px 39.5px;
+        padding: 0px 0px 0px 80px;
         width: 80%;
+    }
+    .landing-content-one{
+        color: white;
+    }
+    .ml2{
+        font-size: 36px!important;
+        color: white;
+    }
+    .ml13{
+        color: white;
+        font-size: 16px!important;
     }
     .landing-title{
         font-size: 36px;        
@@ -230,10 +254,10 @@ body{
     font-size: 18px;
     color: #00adf0;
     display: inline-block;
-    padding-bottom:1px;
+    padding-bottom:2px;
     background-image: linear-gradient(to right, #00adf0 33%,transparent 33% 66%,#00adf0 66%);
     background-position: right bottom;
-    background-size: 300% 1px;
+    background-size: 300% 2px;
     background-repeat: no-repeat
 }
 .about-link:hover {

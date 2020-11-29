@@ -17,9 +17,6 @@
 </template>
 
 <script>
-import { isMobile } from 'mobile-device-detect'
-
-import Header from '../layouts/Header'
 import HeaderBlack from '../layouts/HeaderBlack'
 import MobileHeader from '../layouts/MobileHeader'
 import Landing from '../solution/Landing'
@@ -33,7 +30,6 @@ import Footer from '../layouts/Footer'
 export default {
   name: 'Solution',
   components: {
-    Header,
     HeaderBlack,
     MobileHeader,
     Landing,
@@ -43,21 +39,6 @@ export default {
     Navigation,
     Contact,
     Footer
-  },
-  data () {
-    return {
-      isMobile: isMobile,
-      scrollPosition: null,
-      Title: 'Solution'
-    }
-  },
-  methods: {
-    updateScroll () {
-      this.scrollPosition = window.scrollY
-    }
-  },
-  mounted () {
-    window.addEventListener('scroll', this.updateScroll)
   }
 }
 </script>

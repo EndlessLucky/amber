@@ -59,5 +59,8 @@ export default new Router({
       name: 'TalentDetail',
       component: TalentDetail
     }
-  ]
+  ],
+  scrollBehavior (to, from, savedPosition) {
+    return { x: 0, y: 0 }
+  }
 })

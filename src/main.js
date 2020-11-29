@@ -6,9 +6,11 @@ import router from './router'
 import BootstrapVue from 'bootstrap-vue/dist/bootstrap-vue.esm'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
+import Vuelidate from 'vuelidate'
 
 Vue.config.productionTip = false
 Vue.use(BootstrapVue)
+Vue.use(Vuelidate)
 
 /* eslint-disable no-new */
 new Vue({

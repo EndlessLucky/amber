@@ -1,8 +1,11 @@
 <template>
-  <b-navbar class="nav-bar" toggleable="lg" type="dark" v-bind:style="{backgroundColor: collapseColor, height: collapseHeight}" :class="{change_color: scrollPosition > 50}">
+<div>
+  <b-navbar class="nav-bar" toggleable="lg" type="dark" v-bind:style="{backgroundColor: collapseColor, height: collapseHeight}"
+        :class="{change_color_white: scrollPosition > 50}">
     <b-navbar-brand href="">
       <router-link v-bind:to="{ name: 'Home' }">
-        <img class="logo-img-black" src="../../assets/img/logo-black.svg" v-if="isblackLogo && scrollPosition < 50 && !this.collapse">
+        <img class="logo-img-black" src="../../assets/img/logo-black.svg" v-if="isblackLogo && !collapse">
+        <img class="logo-img-black" src="../../assets/img/logo-black.svg" v-else-if="scrollPosition > 50 && !collapse">
         <img class="logo-img" src="../../assets/img/logo-white.svg" v-else>
       </router-link>
     </b-navbar-brand>
@@ -12,8 +15,8 @@
         <b-button v-if="expanded"  class="sidebar-close" size="sm">X</b-button>
         <button v-else type="button" aria-label="Toggle navigation" class="navbar-toggler collapsed"
           aria-expanded="false" aria-controls="nav-collapse" style="overflow-anchor: none; outline: none;">
-          <span class="navbar-toggler-icon" v-if="isWhiteToggle"></span>
-          <span class="navbar-toggler-icon-orange" v-else></span>
+          <span class="navbar-toggler-icon-orange" v-if="isblackLogo || scrollPosition > 50"></span>
+          <span class="navbar-toggler-icon" v-else></span>
         </button>
       </template>
     </b-navbar-toggle>
@@ -51,17 +54,18 @@
                 <p class="col-md-12 font-size-style-25 pl-0">hola@amber.pe</p>
               </div>
               <div class="col-md-6 text-left">
-                <a><i class="fab fa-instagram text-white awaer mr-4"></i></a>
-                <a><i class="fab fa-linkedin-in text-white awaer mr-4"></i></a>
-                <a><i class="fab fa-facebook-square text-white awaer mr-4"></i></a>
-                <a><i class="fab fa-twitter-square text-white awaer mr-4"></i></a>
-                <a><i class="fab fa-youtube awaer text-white"></i></a>
+                <a><i class="fa fa-instagram text-white awaer mr-4"></i></a>
+                <a><i class="fa fa-linkedin text-white awaer mr-4"></i></a>
+                <a><i class="fa fa-facebook-square text-white awaer mr-4"></i></a>
+                <a><i class="fa fa-twitter-square text-white awaer mr-4"></i></a>
+                <a><i class="fa fa-youtube awaer text-white"></i></a>
               </div>
             </div>
         </div>
       </div>
     </b-collapse>
   </b-navbar>
+</div>
 </template>
 
 <script>
@@ -82,7 +86,7 @@ export default {
       initColorLeft: 'black',
       isMobile: isMobile,
       isWhiteToggle: true,
-      collapseHeight: '80px',
+      collapseHeight: '50px',
       routeName: 'Home'
     }
   },
@@ -94,7 +98,7 @@ export default {
         this.collapseHeight = '100%'
       } else {
         this.collapseColor = 'transparent'
-        this.collapseHeight = '80px'
+        this.collapseHeight = '50px'
       }
     },
     updateScroll () {
@@ -142,12 +146,6 @@ export default {
     height: 46px;
     color: white!important;
   }
-  .nav-bar{
-    background-color: transparent!important;
-    top:0px!important;
-    text-align: center;
-    font-size: 20px;
-  }
   #nav-collapse{
     margin-top: 60px;
   }
@@ -157,7 +155,10 @@ export default {
   .nav-link{
     margin: auto!important;
   }
-  .change_color {
+  .change_color_white {
+    background-color: white!important;
+  }
+  .change_color_blue {
     background-color: #131b27!important;
   }
   .fade-enter-active, .fade-leave-active {

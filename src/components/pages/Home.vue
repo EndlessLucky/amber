@@ -59,6 +59,7 @@ export default {
   },
   mounted () {
     window.addEventListener('scroll', this.updateScroll)
+    this.updateScroll = 0
   }
 }
 </script>
