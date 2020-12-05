@@ -115,7 +115,8 @@ body{
     }
     .ml2{
         color: white;
-        font-size: 150px;        
+        font-size: 150px;  
+        font-weight: bold;
     }
     .landing-content{
         font-size: 14px;
@@ -156,22 +157,22 @@ body{
 @media only screen and (max-width: 765px) {
 
     .landing-title-container{
-        padding: 80% 0px 0px 80px;
+        padding: 80% 0px 0px 100px;
     }
     .landing-content-container{
-        padding: 0px 0px 0px 80px;
-        width: 80%;
+        padding: 0px 20px 0px 50px;
     }
     .landing-content-one{
         color: white;
     }
     .ml2{
-        font-size: 36px!important;
+        font-size: 30px!important;
         color: white;
+        font-weight: bold;
     }
     .ml13{
         color: white;
-        font-size: 16px!important;
+        font-size: 13px!important;
     }
     .landing-title{
         font-size: 36px;        

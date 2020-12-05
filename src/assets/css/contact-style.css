@@ -19,9 +19,11 @@
   }
 }
 .contact-about-title{
+  margin-top: 10%;
   font-size: 44px;
 }
 .contact-about-content{
+  margin-top: 10%;
   font-size: 22px;
 }
 
@@ -36,7 +38,7 @@
 }
 @media only screen and (max-width: 765px) {
   .contact-info-container{
-    padding: 20% 39.5px 30px 10%
+    padding: 0px 39.5px 30px 10%
   }
 }
 .contact-info-map{
